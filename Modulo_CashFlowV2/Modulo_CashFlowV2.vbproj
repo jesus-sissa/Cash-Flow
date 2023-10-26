@@ -30,7 +30,7 @@
     <InstallUrl>https://www.sissaseguridad.com/CashFlowQA/</InstallUrl>
     <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
     <WebPage>CashFlow.htm</WebPage>
-    <ApplicationRevision>29</ApplicationRevision>
+    <ApplicationRevision>30</ApplicationRevision>
     <ApplicationVersion>3.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
