@@ -5,7 +5,7 @@ Imports Modulo_CashFlowV2.cls_Oledb
 Imports dataconection.cls_DatosSQL
 Imports System.Configuration
 Public Class cls_Cajascxn
-
+    'Esto es un cambio con GIT
     Public Shared Function fn_CajasConsultarCnx() As DataTable
         Dim dt As DataTable
         Try
