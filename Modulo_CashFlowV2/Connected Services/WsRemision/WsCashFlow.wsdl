@@ -1,0 +1,574 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="Deposito_Consulta">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="parametro" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Deposito_ConsultaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Deposito_ConsultaResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Depos">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="parametro" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeposResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DeposResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Obtener_punto">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="parametro" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Obtener_puntoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Obtener_puntoResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Obtener_Remision">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="parametro" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Obtener_RemisionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Obtener_RemisionResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetData">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="parametro" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetDataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SetDataResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Guardar_Ticket">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="parametro" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Guardar_TicketResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Guardar_TicketResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Consultar_Sucursales_RFC">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="parametro" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Consultar_Sucursales_RFCResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Consultar_Sucursales_RFCResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Consultar_ReporteSucursales_RFC">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="parametro" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Consultar_ReporteSucursales_RFCResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Consultar_ReporteSucursales_RFCResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Consultar_Tickets_Sucursal_ID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="parametro" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Consultar_Tickets_Sucursal_IDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Consultar_Tickets_Sucursal_IDResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Consultar_Tickets_Sucursal">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ClaveSucursal" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="clave_cliente" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Consultar_Tickets_SucursalResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Consultar_Tickets_SucursalResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Recibir_Ticket_Tecnico">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ClaveSucursal" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="Ticket" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Recibir_Ticket_TecnicoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Recibir_Ticket_TecnicoResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Finalizar_Ticket_Tecnico">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ClaveSucursal" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="ticket" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Finalizar_Ticket_TecnicoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Finalizar_Ticket_TecnicoResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Agregar_ComentarioTicket_Tenico">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ClaveSucursal" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="ticket" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="comentario" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Agregar_ComentarioTicket_TenicoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Agregar_ComentarioTicket_TenicoResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="Deposito_ConsultaSoapIn">
+    <wsdl:part name="parameters" element="tns:Deposito_Consulta" />
+  </wsdl:message>
+  <wsdl:message name="Deposito_ConsultaSoapOut">
+    <wsdl:part name="parameters" element="tns:Deposito_ConsultaResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeposSoapIn">
+    <wsdl:part name="parameters" element="tns:Depos" />
+  </wsdl:message>
+  <wsdl:message name="DeposSoapOut">
+    <wsdl:part name="parameters" element="tns:DeposResponse" />
+  </wsdl:message>
+  <wsdl:message name="Obtener_puntoSoapIn">
+    <wsdl:part name="parameters" element="tns:Obtener_punto" />
+  </wsdl:message>
+  <wsdl:message name="Obtener_puntoSoapOut">
+    <wsdl:part name="parameters" element="tns:Obtener_puntoResponse" />
+  </wsdl:message>
+  <wsdl:message name="Obtener_RemisionSoapIn">
+    <wsdl:part name="parameters" element="tns:Obtener_Remision" />
+  </wsdl:message>
+  <wsdl:message name="Obtener_RemisionSoapOut">
+    <wsdl:part name="parameters" element="tns:Obtener_RemisionResponse" />
+  </wsdl:message>
+  <wsdl:message name="SetDataSoapIn">
+    <wsdl:part name="parameters" element="tns:SetData" />
+  </wsdl:message>
+  <wsdl:message name="SetDataSoapOut">
+    <wsdl:part name="parameters" element="tns:SetDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="Guardar_TicketSoapIn">
+    <wsdl:part name="parameters" element="tns:Guardar_Ticket" />
+  </wsdl:message>
+  <wsdl:message name="Guardar_TicketSoapOut">
+    <wsdl:part name="parameters" element="tns:Guardar_TicketResponse" />
+  </wsdl:message>
+  <wsdl:message name="Consultar_Sucursales_RFCSoapIn">
+    <wsdl:part name="parameters" element="tns:Consultar_Sucursales_RFC" />
+  </wsdl:message>
+  <wsdl:message name="Consultar_Sucursales_RFCSoapOut">
+    <wsdl:part name="parameters" element="tns:Consultar_Sucursales_RFCResponse" />
+  </wsdl:message>
+  <wsdl:message name="Consultar_ReporteSucursales_RFCSoapIn">
+    <wsdl:part name="parameters" element="tns:Consultar_ReporteSucursales_RFC" />
+  </wsdl:message>
+  <wsdl:message name="Consultar_ReporteSucursales_RFCSoapOut">
+    <wsdl:part name="parameters" element="tns:Consultar_ReporteSucursales_RFCResponse" />
+  </wsdl:message>
+  <wsdl:message name="Consultar_Tickets_Sucursal_IDSoapIn">
+    <wsdl:part name="parameters" element="tns:Consultar_Tickets_Sucursal_ID" />
+  </wsdl:message>
+  <wsdl:message name="Consultar_Tickets_Sucursal_IDSoapOut">
+    <wsdl:part name="parameters" element="tns:Consultar_Tickets_Sucursal_IDResponse" />
+  </wsdl:message>
+  <wsdl:message name="Consultar_Tickets_SucursalSoapIn">
+    <wsdl:part name="parameters" element="tns:Consultar_Tickets_Sucursal" />
+  </wsdl:message>
+  <wsdl:message name="Consultar_Tickets_SucursalSoapOut">
+    <wsdl:part name="parameters" element="tns:Consultar_Tickets_SucursalResponse" />
+  </wsdl:message>
+  <wsdl:message name="Recibir_Ticket_TecnicoSoapIn">
+    <wsdl:part name="parameters" element="tns:Recibir_Ticket_Tecnico" />
+  </wsdl:message>
+  <wsdl:message name="Recibir_Ticket_TecnicoSoapOut">
+    <wsdl:part name="parameters" element="tns:Recibir_Ticket_TecnicoResponse" />
+  </wsdl:message>
+  <wsdl:message name="Finalizar_Ticket_TecnicoSoapIn">
+    <wsdl:part name="parameters" element="tns:Finalizar_Ticket_Tecnico" />
+  </wsdl:message>
+  <wsdl:message name="Finalizar_Ticket_TecnicoSoapOut">
+    <wsdl:part name="parameters" element="tns:Finalizar_Ticket_TecnicoResponse" />
+  </wsdl:message>
+  <wsdl:message name="Agregar_ComentarioTicket_TenicoSoapIn">
+    <wsdl:part name="parameters" element="tns:Agregar_ComentarioTicket_Tenico" />
+  </wsdl:message>
+  <wsdl:message name="Agregar_ComentarioTicket_TenicoSoapOut">
+    <wsdl:part name="parameters" element="tns:Agregar_ComentarioTicket_TenicoResponse" />
+  </wsdl:message>
+  <wsdl:portType name="WsCashFlowSoap">
+    <wsdl:operation name="Deposito_Consulta">
+      <wsdl:input message="tns:Deposito_ConsultaSoapIn" />
+      <wsdl:output message="tns:Deposito_ConsultaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Depos">
+      <wsdl:input message="tns:DeposSoapIn" />
+      <wsdl:output message="tns:DeposSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Obtener_punto">
+      <wsdl:input message="tns:Obtener_puntoSoapIn" />
+      <wsdl:output message="tns:Obtener_puntoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Obtener_Remision">
+      <wsdl:input message="tns:Obtener_RemisionSoapIn" />
+      <wsdl:output message="tns:Obtener_RemisionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SetData">
+      <wsdl:input message="tns:SetDataSoapIn" />
+      <wsdl:output message="tns:SetDataSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Guardar_Ticket">
+      <wsdl:input message="tns:Guardar_TicketSoapIn" />
+      <wsdl:output message="tns:Guardar_TicketSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Consultar_Sucursales_RFC">
+      <wsdl:input message="tns:Consultar_Sucursales_RFCSoapIn" />
+      <wsdl:output message="tns:Consultar_Sucursales_RFCSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Consultar_ReporteSucursales_RFC">
+      <wsdl:input message="tns:Consultar_ReporteSucursales_RFCSoapIn" />
+      <wsdl:output message="tns:Consultar_ReporteSucursales_RFCSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Consultar_Tickets_Sucursal_ID">
+      <wsdl:input message="tns:Consultar_Tickets_Sucursal_IDSoapIn" />
+      <wsdl:output message="tns:Consultar_Tickets_Sucursal_IDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Consultar_Tickets_Sucursal">
+      <wsdl:input message="tns:Consultar_Tickets_SucursalSoapIn" />
+      <wsdl:output message="tns:Consultar_Tickets_SucursalSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Recibir_Ticket_Tecnico">
+      <wsdl:input message="tns:Recibir_Ticket_TecnicoSoapIn" />
+      <wsdl:output message="tns:Recibir_Ticket_TecnicoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Finalizar_Ticket_Tecnico">
+      <wsdl:input message="tns:Finalizar_Ticket_TecnicoSoapIn" />
+      <wsdl:output message="tns:Finalizar_Ticket_TecnicoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Agregar_ComentarioTicket_Tenico">
+      <wsdl:input message="tns:Agregar_ComentarioTicket_TenicoSoapIn" />
+      <wsdl:output message="tns:Agregar_ComentarioTicket_TenicoSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WsCashFlowSoap" type="tns:WsCashFlowSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Deposito_Consulta">
+      <soap:operation soapAction="http://tempuri.org/Deposito_Consulta" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Depos">
+      <soap:operation soapAction="http://tempuri.org/Depos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Obtener_punto">
+      <soap:operation soapAction="http://tempuri.org/Obtener_punto" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Obtener_Remision">
+      <soap:operation soapAction="http://tempuri.org/Obtener_Remision" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetData">
+      <soap:operation soapAction="http://tempuri.org/SetData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Guardar_Ticket">
+      <soap:operation soapAction="http://tempuri.org/Guardar_Ticket" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Consultar_Sucursales_RFC">
+      <soap:operation soapAction="http://tempuri.org/Consultar_Sucursales_RFC" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Consultar_ReporteSucursales_RFC">
+      <soap:operation soapAction="http://tempuri.org/Consultar_ReporteSucursales_RFC" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Consultar_Tickets_Sucursal_ID">
+      <soap:operation soapAction="http://tempuri.org/Consultar_Tickets_Sucursal_ID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Consultar_Tickets_Sucursal">
+      <soap:operation soapAction="http://tempuri.org/Consultar_Tickets_Sucursal" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Recibir_Ticket_Tecnico">
+      <soap:operation soapAction="http://tempuri.org/Recibir_Ticket_Tecnico" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Finalizar_Ticket_Tecnico">
+      <soap:operation soapAction="http://tempuri.org/Finalizar_Ticket_Tecnico" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Agregar_ComentarioTicket_Tenico">
+      <soap:operation soapAction="http://tempuri.org/Agregar_ComentarioTicket_Tenico" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WsCashFlowSoap12" type="tns:WsCashFlowSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Deposito_Consulta">
+      <soap12:operation soapAction="http://tempuri.org/Deposito_Consulta" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Depos">
+      <soap12:operation soapAction="http://tempuri.org/Depos" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Obtener_punto">
+      <soap12:operation soapAction="http://tempuri.org/Obtener_punto" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Obtener_Remision">
+      <soap12:operation soapAction="http://tempuri.org/Obtener_Remision" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetData">
+      <soap12:operation soapAction="http://tempuri.org/SetData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Guardar_Ticket">
+      <soap12:operation soapAction="http://tempuri.org/Guardar_Ticket" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Consultar_Sucursales_RFC">
+      <soap12:operation soapAction="http://tempuri.org/Consultar_Sucursales_RFC" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Consultar_ReporteSucursales_RFC">
+      <soap12:operation soapAction="http://tempuri.org/Consultar_ReporteSucursales_RFC" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Consultar_Tickets_Sucursal_ID">
+      <soap12:operation soapAction="http://tempuri.org/Consultar_Tickets_Sucursal_ID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Consultar_Tickets_Sucursal">
+      <soap12:operation soapAction="http://tempuri.org/Consultar_Tickets_Sucursal" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Recibir_Ticket_Tecnico">
+      <soap12:operation soapAction="http://tempuri.org/Recibir_Ticket_Tecnico" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Finalizar_Ticket_Tecnico">
+      <soap12:operation soapAction="http://tempuri.org/Finalizar_Ticket_Tecnico" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Agregar_ComentarioTicket_Tenico">
+      <soap12:operation soapAction="http://tempuri.org/Agregar_ComentarioTicket_Tenico" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WsCashFlow">
+    <wsdl:port name="WsCashFlowSoap" binding="tns:WsCashFlowSoap">
+      <soap:address location="https://www.sissaseguridad.com/WsCajeroInteligente/WsCashFlow.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WsCashFlowSoap12" binding="tns:WsCashFlowSoap12">
+      <soap12:address location="https://www.sissaseguridad.com/WsCajeroInteligente/WsCashFlow.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

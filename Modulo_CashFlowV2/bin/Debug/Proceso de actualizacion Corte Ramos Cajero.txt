@@ -1,0 +1,51 @@
+*.-Crear Respaldo de carpeta del cajero en C:
+*.-Crear Respaldo de carpeta del cajero en memoria USB
+*.-si no existe SqlCe40Toolbox en el cajero Bajarlo desde la USB
+*.-Bajar carpeta del USB al cajero 
+*.-Modificar Base de datos con SqlCe40Toolbox(Clave: Siac@1357@##-- y verificar que apunte bien a la base de datos correcta )
+
+1.- Agregar tabla Corte Local ----------------------------------------------------------------------------
+CREATE TABLE [Corte] (
+ 			 [Id_Corte] int IDENTITY (1,1) NOT NULL
+			, [Usuario_Registro] int NOT NULL
+			, [Fecha_Registro] datetime NULL
+			, [Usuario_Cierre] int NOT NULL
+			, [Fecha_Cierre] datetime NULL
+			, [Status] nvarchar(1) NOT NULL
+			, [Sincronizado] nvarchar(1) NULL
+);
+GO
+
+ALTER TABLE [Corte] ADD CONSTRAINT [PK_Corte] PRIMARY KEY ([Id_Corte]);
+GO
+
+
+2.-Agregar campo *Id_Corte a tabla Depositos--------------------------------------------------------------------------------------------
+	ALTER TABLE depositos ADD Id_Corte Int NULL
+
+3.-Agregar campo *Importe_Otrosd a tabla Retiros--------------------------------------------------------------------------------------------
+	ALTER TABLE Retiros ADD Importe_Otrosd dec NULL
+
+4.-Agregar campo *Es_Efectivo a tabla Depositos-----------------------------------------------------------------------------------------
+	ALTER TABLE depositos ADD Es_Efectivo nvarchar(1) NULL
+	Update depositos Set Es_Efectivo = 'S'
+5.-Agregar campo *Corte a tabla Opciones--------------------------------------------------------------------------------------------
+	Insert Into Opciones(Orden_Opcion,Clave_Opcion,Descripcion,Nombre_Boton,Tipo,Status)
+	Values(17,'17','Corte','btn_Corte',1,'A')
+	
+
+
+6.- Se agregan las siguientes variables persistentes con valor en 0---------------------------------------------------------------------
+	<pManejaCorte>0</pManejaCorte>
+	<pCorteActual>0</pCorteActual>
+
+	-justo antes de   
+	<pTipoMonedaV1>USD</pTipoMonedaV1>
+	<pTipoMonedaV2>USD</pTipoMonedaV2>
+
+5.-Se Remplaza el archivo .exe----------------------------------------------------------------------------------------------------------
+6.-Cambiar a modo de imprecion windows----------------------------------------------------------------------------------------------------------
+
+Como regresar al punto anterior
+1.-Regresar el archivo .exe del respaldo local que se hizo ---------------------------------------------
+2.-Cambiar a modo de imprecion Nippon----------------------------------------------------------------------------------------------------------

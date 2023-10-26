@@ -1,0 +1,121 @@
+C:\SIAC\Y5_Proyectos_CashFlow-CashWeb\Modulo_CashFlowV2\Modulo_CashFlowV2\bin\Release\CashFlow.sdf
+C:\SIAC\Y5_Proyectos_CashFlow-CashWeb\Modulo_CashFlowV2\Modulo_CashFlowV2\bin\Release\Modulo_CashFlowV2.exe.config
+C:\SIAC\Y5_Proyectos_CashFlow-CashWeb\Modulo_CashFlowV2\Modulo_CashFlowV2\bin\Release\Modulo_CashFlowV2.exe
+C:\SIAC\Y5_Proyectos_CashFlow-CashWeb\Modulo_CashFlowV2\Modulo_CashFlowV2\bin\Release\Modulo_CashFlowV2.pdb
+C:\SIAC\Y5_Proyectos_CashFlow-CashWeb\Modulo_CashFlowV2\Modulo_CashFlowV2\bin\Release\Modulo_CashFlowV2.xml
+C:\SIAC\Y5_Proyectos_CashFlow-CashWeb\Modulo_CashFlowV2\Modulo_CashFlowV2\bin\Release\dataconection.dll
+C:\SIAC\Y5_Proyectos_CashFlow-CashWeb\Modulo_CashFlowV2\Modulo_CashFlowV2\bin\Release\kbcustom.dll
+C:\SIAC\Y5_Proyectos_CashFlow-CashWeb\Modulo_CashFlowV2\Modulo_CashFlowV2\bin\Release\meidevice.dll
+C:\SIAC\Y5_Proyectos_CashFlow-CashWeb\Modulo_CashFlowV2\Modulo_CashFlowV2\bin\Release\dataconection.pdb
+C:\SIAC\Y5_Proyectos_CashFlow-CashWeb\Modulo_CashFlowV2\Modulo_CashFlowV2\bin\Release\dataconection.xml
+C:\SIAC\Y5_Proyectos_CashFlow-CashWeb\Modulo_CashFlowV2\Modulo_CashFlowV2\obj\Release\Modulo_CashFlowV2.vbprojResolveAssemblyReference.cache
+C:\SIAC\Y5_Proyectos_CashFlow-CashWeb\Modulo_CashFlowV2\Modulo_CashFlowV2\obj\Release\Modulo_CashFlowV2.frm_Actualizar.resources
+C:\SIAC\Y5_Proyectos_CashFlow-CashWeb\Modulo_CashFlowV2\Modulo_CashFlowV2\obj\Release\Modulo_CashFlowV2.frm_CambiarIP.resources
+C:\SIAC\Y5_Proyectos_CashFlow-CashWeb\Modulo_CashFlowV2\Modulo_CashFlowV2\obj\Release\Modulo_CashFlowV2.frm_CatalogoCaset.resources
+C:\SIAC\Y5_Proyectos_CashFlow-CashWeb\Modulo_CashFlowV2\Modulo_CashFlowV2\obj\Release\Modulo_CashFlowV2.frm_CatalogoDenominacion.resources
+C:\SIAC\Y5_Proyectos_CashFlow-CashWeb\Modulo_CashFlowV2\Modulo_CashFlowV2\obj\Release\Modulo_CashFlowV2.frm_CatalogoMonedas.resources
+C:\SIAC\Y5_Proyectos_CashFlow-CashWeb\Modulo_CashFlowV2\Modulo_CashFlowV2\obj\Release\Modulo_CashFlowV2.frm_ConsultaDepositos.resources
+C:\SIAC\Y5_Proyectos_CashFlow-CashWeb\Modulo_CashFlowV2\Modulo_CashFlowV2\obj\Release\Modulo_CashFlowV2.frm_ConsultaDepositosD.resources
+C:\SIAC\Y5_Proyectos_CashFlow-CashWeb\Modulo_CashFlowV2\Modulo_CashFlowV2\obj\Release\Modulo_CashFlowV2.frm_ConsultaLog.resources
+C:\SIAC\Y5_Proyectos_CashFlow-CashWeb\Modulo_CashFlowV2\Modulo_CashFlowV2\obj\Release\Modulo_CashFlowV2.frm_ConsultaMovimientos.resources
+C:\SIAC\Y5_Proyectos_CashFlow-CashWeb\Modulo_CashFlowV2\Modulo_CashFlowV2\obj\Release\Modulo_CashFlowV2.frm_ConsultaRecoleccion.resources
+C:\SIAC\Y5_Proyectos_CashFlow-CashWeb\Modulo_CashFlowV2\Modulo_CashFlowV2\obj\Release\Modulo_CashFlowV2.frm_ConsultaRecoleccionD.resources
+C:\SIAC\Y5_Proyectos_CashFlow-CashWeb\Modulo_CashFlowV2\Modulo_CashFlowV2\obj\Release\Modulo_CashFlowV2.frm_ConsultaSaldos.resources
+C:\SIAC\Y5_Proyectos_CashFlow-CashWeb\Modulo_CashFlowV2\Modulo_CashFlowV2\obj\Release\Modulo_CashFlowV2.frm_ConsultaUsuarios.resources
+C:\SIAC\Y5_Proyectos_CashFlow-CashWeb\Modulo_CashFlowV2\Modulo_CashFlowV2\obj\Release\Modulo_CashFlowV2.frm_CorteDiario.resources
+C:\SIAC\Y5_Proyectos_CashFlow-CashWeb\Modulo_CashFlowV2\Modulo_CashFlowV2\obj\Release\Modulo_CashFlowV2.frm_Depositar.resources
+C:\SIAC\Y5_Proyectos_CashFlow-CashWeb\Modulo_CashFlowV2\Modulo_CashFlowV2\obj\Release\Modulo_CashFlowV2.frm_DepositoManual.resources
+C:\SIAC\Y5_Proyectos_CashFlow-CashWeb\Modulo_CashFlowV2\Modulo_CashFlowV2\obj\Release\Modulo_CashFlowV2.frm_DepositoXvalidador.resources
+C:\SIAC\Y5_Proyectos_CashFlow-CashWeb\Modulo_CashFlowV2\Modulo_CashFlowV2\obj\Release\Modulo_CashFlowV2.frm_EditarXML.resources
+C:\SIAC\Y5_Proyectos_CashFlow-CashWeb\Modulo_CashFlowV2\Modulo_CashFlowV2\obj\Release\Modulo_CashFlowV2.frm_FechaModal.resources
+C:\SIAC\Y5_Proyectos_CashFlow-CashWeb\Modulo_CashFlowV2\Modulo_CashFlowV2\obj\Release\Modulo_CashFlowV2.frm_FirmaElectronica.resources
+C:\SIAC\Y5_Proyectos_CashFlow-CashWeb\Modulo_CashFlowV2\Modulo_CashFlowV2\obj\Release\Modulo_CashFlowV2.frm_Login.resources
+C:\SIAC\Y5_Proyectos_CashFlow-CashWeb\Modulo_CashFlowV2\Modulo_CashFlowV2\obj\Release\Modulo_CashFlowV2.frm_Mensaje.resources
+C:\SIAC\Y5_Proyectos_CashFlow-CashWeb\Modulo_CashFlowV2\Modulo_CashFlowV2\obj\Release\Modulo_CashFlowV2.frm_MenuAuditoria.resources
+C:\SIAC\Y5_Proyectos_CashFlow-CashWeb\Modulo_CashFlowV2\Modulo_CashFlowV2\obj\Release\Modulo_CashFlowV2.frm_MenuGeneral.resources
+C:\SIAC\Y5_Proyectos_CashFlow-CashWeb\Modulo_CashFlowV2\Modulo_CashFlowV2\obj\Release\Modulo_CashFlowV2.frm_Parametros.resources
+C:\SIAC\Y5_Proyectos_CashFlow-CashWeb\Modulo_CashFlowV2\Modulo_CashFlowV2\obj\Release\Modulo_CashFlowV2.frm_Privilegios.resources
+C:\SIAC\Y5_Proyectos_CashFlow-CashWeb\Modulo_CashFlowV2\Modulo_CashFlowV2\obj\Release\Modulo_CashFlowV2.frm_Recolectar.resources
+C:\SIAC\Y5_Proyectos_CashFlow-CashWeb\Modulo_CashFlowV2\Modulo_CashFlowV2\obj\Release\Modulo_CashFlowV2.frm_RespaldarenWeb.resources
+C:\SIAC\Y5_Proyectos_CashFlow-CashWeb\Modulo_CashFlowV2\Modulo_CashFlowV2\obj\Release\Modulo_CashFlowV2.frm_RespaldarSistema.resources
+C:\SIAC\Y5_Proyectos_CashFlow-CashWeb\Modulo_CashFlowV2\Modulo_CashFlowV2\obj\Release\Modulo_CashFlowV2.frm_ValidarBillete.resources
+C:\SIAC\Y5_Proyectos_CashFlow-CashWeb\Modulo_CashFlowV2\Modulo_CashFlowV2\obj\Release\Modulo_CashFlowV2.Resources.resources
+C:\SIAC\Y5_Proyectos_CashFlow-CashWeb\Modulo_CashFlowV2\Modulo_CashFlowV2\obj\Release\Modulo_CashFlowV2.vbproj.GenerateResource.Cache
+C:\SIAC\Y5_Proyectos_CashFlow-CashWeb\Modulo_CashFlowV2\Modulo_CashFlowV2\obj\Release\Modulo_CashFlowV2.exe
+C:\SIAC\Y5_Proyectos_CashFlow-CashWeb\Modulo_CashFlowV2\Modulo_CashFlowV2\obj\Release\Modulo_CashFlowV2.xml
+C:\SIAC\Y5_Proyectos_CashFlow-CashWeb\Modulo_CashFlowV2\Modulo_CashFlowV2\obj\Release\Modulo_CashFlowV2.pdb
+C:\Users\juan.mora\Documents\ver13_02_23\CashFlow_Lite\CASHFLOW V3.0\CASHFLOW REMISION DIGITAL a partir v73\Modulo_CashFlowV2\bin\Release\DB\Local.db
+C:\Users\juan.mora\Documents\ver13_02_23\CashFlow_Lite\CASHFLOW V3.0\CASHFLOW REMISION DIGITAL a partir v73\Modulo_CashFlowV2\bin\Release\x86\SQLite.Interop.dll
+C:\Users\juan.mora\Documents\ver13_02_23\CashFlow_Lite\CASHFLOW V3.0\CASHFLOW REMISION DIGITAL a partir v73\Modulo_CashFlowV2\bin\Release\x64\SQLite.Interop.dll
+C:\Users\juan.mora\Documents\ver13_02_23\CashFlow_Lite\CASHFLOW V3.0\CASHFLOW REMISION DIGITAL a partir v73\Modulo_CashFlowV2\bin\Release\Modulo_CashFlowV2.exe.config
+C:\Users\juan.mora\Documents\ver13_02_23\CashFlow_Lite\CASHFLOW V3.0\CASHFLOW REMISION DIGITAL a partir v73\Modulo_CashFlowV2\bin\Release\Modulo_CashFlowV2.exe.manifest
+C:\Users\juan.mora\Documents\ver13_02_23\CashFlow_Lite\CASHFLOW V3.0\CASHFLOW REMISION DIGITAL a partir v73\Modulo_CashFlowV2\bin\Release\Modulo_CashFlowV2.application
+C:\Users\juan.mora\Documents\ver13_02_23\CashFlow_Lite\CASHFLOW V3.0\CASHFLOW REMISION DIGITAL a partir v73\Modulo_CashFlowV2\bin\Release\Modulo_CashFlowV2.exe
+C:\Users\juan.mora\Documents\ver13_02_23\CashFlow_Lite\CASHFLOW V3.0\CASHFLOW REMISION DIGITAL a partir v73\Modulo_CashFlowV2\bin\Release\Modulo_CashFlowV2.pdb
+C:\Users\juan.mora\Documents\ver13_02_23\CashFlow_Lite\CASHFLOW V3.0\CASHFLOW REMISION DIGITAL a partir v73\Modulo_CashFlowV2\bin\Release\Modulo_CashFlowV2.xml
+C:\Users\juan.mora\Documents\ver13_02_23\CashFlow_Lite\CASHFLOW V3.0\CASHFLOW REMISION DIGITAL a partir v73\Modulo_CashFlowV2\bin\Release\EntityFramework.dll
+C:\Users\juan.mora\Documents\ver13_02_23\CashFlow_Lite\CASHFLOW V3.0\CASHFLOW REMISION DIGITAL a partir v73\Modulo_CashFlowV2\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\juan.mora\Documents\ver13_02_23\CashFlow_Lite\CASHFLOW V3.0\CASHFLOW REMISION DIGITAL a partir v73\Modulo_CashFlowV2\bin\Release\kbcustom.dll
+C:\Users\juan.mora\Documents\ver13_02_23\CashFlow_Lite\CASHFLOW V3.0\CASHFLOW REMISION DIGITAL a partir v73\Modulo_CashFlowV2\bin\Release\meidevice.dll
+C:\Users\juan.mora\Documents\ver13_02_23\CashFlow_Lite\CASHFLOW V3.0\CASHFLOW REMISION DIGITAL a partir v73\Modulo_CashFlowV2\bin\Release\Newtonsoft.Json.dll
+C:\Users\juan.mora\Documents\ver13_02_23\CashFlow_Lite\CASHFLOW V3.0\CASHFLOW REMISION DIGITAL a partir v73\Modulo_CashFlowV2\bin\Release\NiiPrinterCLib.dll
+C:\Users\juan.mora\Documents\ver13_02_23\CashFlow_Lite\CASHFLOW V3.0\CASHFLOW REMISION DIGITAL a partir v73\Modulo_CashFlowV2\bin\Release\System.Data.SQLite.dll
+C:\Users\juan.mora\Documents\ver13_02_23\CashFlow_Lite\CASHFLOW V3.0\CASHFLOW REMISION DIGITAL a partir v73\Modulo_CashFlowV2\bin\Release\EntityFramework.xml
+C:\Users\juan.mora\Documents\ver13_02_23\CashFlow_Lite\CASHFLOW V3.0\CASHFLOW REMISION DIGITAL a partir v73\Modulo_CashFlowV2\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\juan.mora\Documents\ver13_02_23\CashFlow_Lite\CASHFLOW V3.0\CASHFLOW REMISION DIGITAL a partir v73\Modulo_CashFlowV2\bin\Release\System.Data.SQLite.xml
+C:\Users\juan.mora\Documents\ver13_02_23\CashFlow_Lite\CASHFLOW V3.0\CASHFLOW REMISION DIGITAL a partir v73\Modulo_CashFlowV2\obj\Release\Modulo_CashFlowV2.frm_AgregarImporte.resources
+C:\Users\juan.mora\Documents\ver13_02_23\CashFlow_Lite\CASHFLOW V3.0\CASHFLOW REMISION DIGITAL a partir v73\Modulo_CashFlowV2\obj\Release\Modulo_CashFlowV2.Frm_CajasCxn.resources
+C:\Users\juan.mora\Documents\ver13_02_23\CashFlow_Lite\CASHFLOW V3.0\CASHFLOW REMISION DIGITAL a partir v73\Modulo_CashFlowV2\obj\Release\Modulo_CashFlowV2.frm_CatalogoCorreos.resources
+C:\Users\juan.mora\Documents\ver13_02_23\CashFlow_Lite\CASHFLOW V3.0\CASHFLOW REMISION DIGITAL a partir v73\Modulo_CashFlowV2\obj\Release\Modulo_CashFlowV2.frm_Cerradura.resources
+C:\Users\juan.mora\Documents\ver13_02_23\CashFlow_Lite\CASHFLOW V3.0\CASHFLOW REMISION DIGITAL a partir v73\Modulo_CashFlowV2\obj\Release\Modulo_CashFlowV2.frm_Config_Server.resources
+C:\Users\juan.mora\Documents\ver13_02_23\CashFlow_Lite\CASHFLOW V3.0\CASHFLOW REMISION DIGITAL a partir v73\Modulo_CashFlowV2\obj\Release\Modulo_CashFlowV2.frm_ConsultaAtascos.resources
+C:\Users\juan.mora\Documents\ver13_02_23\CashFlow_Lite\CASHFLOW V3.0\CASHFLOW REMISION DIGITAL a partir v73\Modulo_CashFlowV2\obj\Release\Modulo_CashFlowV2.frm_ImprimirAtasco.resources
+C:\Users\juan.mora\Documents\ver13_02_23\CashFlow_Lite\CASHFLOW V3.0\CASHFLOW REMISION DIGITAL a partir v73\Modulo_CashFlowV2\obj\Release\Modulo_CashFlowV2.frm_Reporte.resources
+C:\Users\juan.mora\Documents\ver13_02_23\CashFlow_Lite\CASHFLOW V3.0\CASHFLOW REMISION DIGITAL a partir v73\Modulo_CashFlowV2\obj\Release\Modulo_CashFlowV2.frm_Tablas.resources
+C:\Users\juan.mora\Documents\ver13_02_23\CashFlow_Lite\CASHFLOW V3.0\CASHFLOW REMISION DIGITAL a partir v73\Modulo_CashFlowV2\obj\Release\Modulo_CashFlowV2.frm_Lista_Cajas.resources
+C:\Users\juan.mora\Documents\ver13_02_23\CashFlow_Lite\CASHFLOW V3.0\CASHFLOW REMISION DIGITAL a partir v73\Modulo_CashFlowV2\obj\Release\Modulo_CashFlowV2.frm_CatalogoCajas.resources
+C:\Users\juan.mora\Documents\ver13_02_23\CashFlow_Lite\CASHFLOW V3.0\CASHFLOW REMISION DIGITAL a partir v73\Modulo_CashFlowV2\obj\Release\Modulo_CashFlowV2.frm_Corte.resources
+C:\Users\juan.mora\Documents\ver13_02_23\CashFlow_Lite\CASHFLOW V3.0\CASHFLOW REMISION DIGITAL a partir v73\Modulo_CashFlowV2\obj\Release\Modulo_CashFlowV2.frm_BuscarActualizar.resources
+C:\Users\juan.mora\Documents\ver13_02_23\CashFlow_Lite\CASHFLOW V3.0\CASHFLOW REMISION DIGITAL a partir v73\Modulo_CashFlowV2\obj\Release\Modulo_CashFlowV2.frm_Actualizar.resources
+C:\Users\juan.mora\Documents\ver13_02_23\CashFlow_Lite\CASHFLOW V3.0\CASHFLOW REMISION DIGITAL a partir v73\Modulo_CashFlowV2\obj\Release\Modulo_CashFlowV2.frm_CambiarIP.resources
+C:\Users\juan.mora\Documents\ver13_02_23\CashFlow_Lite\CASHFLOW V3.0\CASHFLOW REMISION DIGITAL a partir v73\Modulo_CashFlowV2\obj\Release\Modulo_CashFlowV2.frm_CatalogoCaset.resources
+C:\Users\juan.mora\Documents\ver13_02_23\CashFlow_Lite\CASHFLOW V3.0\CASHFLOW REMISION DIGITAL a partir v73\Modulo_CashFlowV2\obj\Release\Modulo_CashFlowV2.frm_CatalogoDenominacion.resources
+C:\Users\juan.mora\Documents\ver13_02_23\CashFlow_Lite\CASHFLOW V3.0\CASHFLOW REMISION DIGITAL a partir v73\Modulo_CashFlowV2\obj\Release\Modulo_CashFlowV2.frm_CatalogoMonedas.resources
+C:\Users\juan.mora\Documents\ver13_02_23\CashFlow_Lite\CASHFLOW V3.0\CASHFLOW REMISION DIGITAL a partir v73\Modulo_CashFlowV2\obj\Release\Modulo_CashFlowV2.frm_ConsultaDepositos.resources
+C:\Users\juan.mora\Documents\ver13_02_23\CashFlow_Lite\CASHFLOW V3.0\CASHFLOW REMISION DIGITAL a partir v73\Modulo_CashFlowV2\obj\Release\Modulo_CashFlowV2.frm_ConsultaDepositosD.resources
+C:\Users\juan.mora\Documents\ver13_02_23\CashFlow_Lite\CASHFLOW V3.0\CASHFLOW REMISION DIGITAL a partir v73\Modulo_CashFlowV2\obj\Release\Modulo_CashFlowV2.frm_ConsultaLog.resources
+C:\Users\juan.mora\Documents\ver13_02_23\CashFlow_Lite\CASHFLOW V3.0\CASHFLOW REMISION DIGITAL a partir v73\Modulo_CashFlowV2\obj\Release\Modulo_CashFlowV2.frm_ConsultaMovimientos.resources
+C:\Users\juan.mora\Documents\ver13_02_23\CashFlow_Lite\CASHFLOW V3.0\CASHFLOW REMISION DIGITAL a partir v73\Modulo_CashFlowV2\obj\Release\Modulo_CashFlowV2.frm_ConsultaRecoleccion.resources
+C:\Users\juan.mora\Documents\ver13_02_23\CashFlow_Lite\CASHFLOW V3.0\CASHFLOW REMISION DIGITAL a partir v73\Modulo_CashFlowV2\obj\Release\Modulo_CashFlowV2.frm_ConsultaRecoleccionD.resources
+C:\Users\juan.mora\Documents\ver13_02_23\CashFlow_Lite\CASHFLOW V3.0\CASHFLOW REMISION DIGITAL a partir v73\Modulo_CashFlowV2\obj\Release\Modulo_CashFlowV2.frm_ConsultaSaldos.resources
+C:\Users\juan.mora\Documents\ver13_02_23\CashFlow_Lite\CASHFLOW V3.0\CASHFLOW REMISION DIGITAL a partir v73\Modulo_CashFlowV2\obj\Release\Modulo_CashFlowV2.frm_ConsultaUsuarios.resources
+C:\Users\juan.mora\Documents\ver13_02_23\CashFlow_Lite\CASHFLOW V3.0\CASHFLOW REMISION DIGITAL a partir v73\Modulo_CashFlowV2\obj\Release\Modulo_CashFlowV2.frm_SaldoMenu.resources
+C:\Users\juan.mora\Documents\ver13_02_23\CashFlow_Lite\CASHFLOW V3.0\CASHFLOW REMISION DIGITAL a partir v73\Modulo_CashFlowV2\obj\Release\Modulo_CashFlowV2.Frm_CortePorDia.resources
+C:\Users\juan.mora\Documents\ver13_02_23\CashFlow_Lite\CASHFLOW V3.0\CASHFLOW REMISION DIGITAL a partir v73\Modulo_CashFlowV2\obj\Release\Modulo_CashFlowV2.frm_Depositar.resources
+C:\Users\juan.mora\Documents\ver13_02_23\CashFlow_Lite\CASHFLOW V3.0\CASHFLOW REMISION DIGITAL a partir v73\Modulo_CashFlowV2\obj\Release\Modulo_CashFlowV2.frm_DepositoManual.resources
+C:\Users\juan.mora\Documents\ver13_02_23\CashFlow_Lite\CASHFLOW V3.0\CASHFLOW REMISION DIGITAL a partir v73\Modulo_CashFlowV2\obj\Release\Modulo_CashFlowV2.frm_DepositoXvalidador.resources
+C:\Users\juan.mora\Documents\ver13_02_23\CashFlow_Lite\CASHFLOW V3.0\CASHFLOW REMISION DIGITAL a partir v73\Modulo_CashFlowV2\obj\Release\Modulo_CashFlowV2.frm_EditarXML.resources
+C:\Users\juan.mora\Documents\ver13_02_23\CashFlow_Lite\CASHFLOW V3.0\CASHFLOW REMISION DIGITAL a partir v73\Modulo_CashFlowV2\obj\Release\Modulo_CashFlowV2.frm_EscanearPuertos.resources
+C:\Users\juan.mora\Documents\ver13_02_23\CashFlow_Lite\CASHFLOW V3.0\CASHFLOW REMISION DIGITAL a partir v73\Modulo_CashFlowV2\obj\Release\Modulo_CashFlowV2.frm_FechaModal.resources
+C:\Users\juan.mora\Documents\ver13_02_23\CashFlow_Lite\CASHFLOW V3.0\CASHFLOW REMISION DIGITAL a partir v73\Modulo_CashFlowV2\obj\Release\Modulo_CashFlowV2.frm_FirmaElectronica.resources
+C:\Users\juan.mora\Documents\ver13_02_23\CashFlow_Lite\CASHFLOW V3.0\CASHFLOW REMISION DIGITAL a partir v73\Modulo_CashFlowV2\obj\Release\Modulo_CashFlowV2.frm_Login.resources
+C:\Users\juan.mora\Documents\ver13_02_23\CashFlow_Lite\CASHFLOW V3.0\CASHFLOW REMISION DIGITAL a partir v73\Modulo_CashFlowV2\obj\Release\Modulo_CashFlowV2.frm_Mensaje.resources
+C:\Users\juan.mora\Documents\ver13_02_23\CashFlow_Lite\CASHFLOW V3.0\CASHFLOW REMISION DIGITAL a partir v73\Modulo_CashFlowV2\obj\Release\Modulo_CashFlowV2.frm_MenuAuditoria.resources
+C:\Users\juan.mora\Documents\ver13_02_23\CashFlow_Lite\CASHFLOW V3.0\CASHFLOW REMISION DIGITAL a partir v73\Modulo_CashFlowV2\obj\Release\Modulo_CashFlowV2.frm_MenuGeneral.resources
+C:\Users\juan.mora\Documents\ver13_02_23\CashFlow_Lite\CASHFLOW V3.0\CASHFLOW REMISION DIGITAL a partir v73\Modulo_CashFlowV2\obj\Release\Modulo_CashFlowV2.frm_Parametros.resources
+C:\Users\juan.mora\Documents\ver13_02_23\CashFlow_Lite\CASHFLOW V3.0\CASHFLOW REMISION DIGITAL a partir v73\Modulo_CashFlowV2\obj\Release\Modulo_CashFlowV2.frm_Privilegios.resources
+C:\Users\juan.mora\Documents\ver13_02_23\CashFlow_Lite\CASHFLOW V3.0\CASHFLOW REMISION DIGITAL a partir v73\Modulo_CashFlowV2\obj\Release\Modulo_CashFlowV2.frm_Recolectar.resources
+C:\Users\juan.mora\Documents\ver13_02_23\CashFlow_Lite\CASHFLOW V3.0\CASHFLOW REMISION DIGITAL a partir v73\Modulo_CashFlowV2\obj\Release\Modulo_CashFlowV2.frm_RespaldarenWeb.resources
+C:\Users\juan.mora\Documents\ver13_02_23\CashFlow_Lite\CASHFLOW V3.0\CASHFLOW REMISION DIGITAL a partir v73\Modulo_CashFlowV2\obj\Release\Modulo_CashFlowV2.frm_RespaldarSistema.resources
+C:\Users\juan.mora\Documents\ver13_02_23\CashFlow_Lite\CASHFLOW V3.0\CASHFLOW REMISION DIGITAL a partir v73\Modulo_CashFlowV2\obj\Release\Modulo_CashFlowV2.frm_SQLCE4_Toolbox.resources
+C:\Users\juan.mora\Documents\ver13_02_23\CashFlow_Lite\CASHFLOW V3.0\CASHFLOW REMISION DIGITAL a partir v73\Modulo_CashFlowV2\obj\Release\Modulo_CashFlowV2.frm_ValidarBillete.resources
+C:\Users\juan.mora\Documents\ver13_02_23\CashFlow_Lite\CASHFLOW V3.0\CASHFLOW REMISION DIGITAL a partir v73\Modulo_CashFlowV2\obj\Release\Modulo_CashFlowV2.Resources.resources
+C:\Users\juan.mora\Documents\ver13_02_23\CashFlow_Lite\CASHFLOW V3.0\CASHFLOW REMISION DIGITAL a partir v73\Modulo_CashFlowV2\obj\Release\Modulo_CashFlowV2.vbproj.GenerateResource.cache
+C:\Users\juan.mora\Documents\ver13_02_23\CashFlow_Lite\CASHFLOW V3.0\CASHFLOW REMISION DIGITAL a partir v73\Modulo_CashFlowV2\obj\Release\Modulo_CashFlowV2.vbproj.CoreCompileInputs.cache
+C:\Users\juan.mora\Documents\ver13_02_23\CashFlow_Lite\CASHFLOW V3.0\CASHFLOW REMISION DIGITAL a partir v73\Modulo_CashFlowV2\obj\Release\Modulo_CashFlowV2.TrustInfo.xml
+C:\Users\juan.mora\Documents\ver13_02_23\CashFlow_Lite\CASHFLOW V3.0\CASHFLOW REMISION DIGITAL a partir v73\Modulo_CashFlowV2\obj\Release\Modulo_CashFlowV2.exe.manifest
+C:\Users\juan.mora\Documents\ver13_02_23\CashFlow_Lite\CASHFLOW V3.0\CASHFLOW REMISION DIGITAL a partir v73\Modulo_CashFlowV2\obj\Release\Modulo_CashFlowV2.application
+C:\Users\juan.mora\Documents\ver13_02_23\CashFlow_Lite\CASHFLOW V3.0\CASHFLOW REMISION DIGITAL a partir v73\Modulo_CashFlowV2\obj\Release\Modulo_CashFlowV2.vbproj.CopyComplete
+C:\Users\juan.mora\Documents\ver13_02_23\CashFlow_Lite\CASHFLOW V3.0\CASHFLOW REMISION DIGITAL a partir v73\Modulo_CashFlowV2\obj\Release\Modulo_CashFlowV2.exe
+C:\Users\juan.mora\Documents\ver13_02_23\CashFlow_Lite\CASHFLOW V3.0\CASHFLOW REMISION DIGITAL a partir v73\Modulo_CashFlowV2\obj\Release\Modulo_CashFlowV2.xml
+C:\Users\juan.mora\Documents\ver13_02_23\CashFlow_Lite\CASHFLOW V3.0\CASHFLOW REMISION DIGITAL a partir v73\Modulo_CashFlowV2\obj\Release\Modulo_CashFlowV2.pdb

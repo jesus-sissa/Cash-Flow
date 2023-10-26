@@ -1,0 +1,1000 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7ACDEA43-0D79-4237-B65A-2587DEDDA744}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Modulo_CashFlowV2.My.MyApplication</StartupObject>
+    <RootNamespace>Modulo_CashFlowV2</RootNamespace>
+    <AssemblyName>Modulo_CashFlowV2</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <TargetFrameworkProfile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <PublishUrl>D:\REPOSITORY\DEPLOYMENT\CashFlow\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <InstallUrl>https://www.sissaseguridad.com/CashFlowQA/</InstallUrl>
+    <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
+    <WebPage>CashFlow.htm</WebPage>
+    <ApplicationRevision>29</ApplicationRevision>
+    <ApplicationVersion>3.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>false</BootstrapperEnabled>
+    <BootstrapperComponentsUrl>https://www.microsoft.com/es-mx/download/details.aspx%3fid=30709</BootstrapperComponentsUrl>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Modulo_CashFlowV2.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Modulo_CashFlowV2.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>SignoPesos_Ico.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>61E4FDBE56CF8D058BC5F1B4068B87BF1D474B9A</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Modulo_CashFlowV2_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>Internet</TargetZone>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="dataconection, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\dataconection\dataconection\obj\Release\dataconection.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="kbcustom, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Referencias_DLL\kbcustom.dll</HintPath>
+    </Reference>
+    <Reference Include="meidevice, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\meidevice.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="NiiPrinterCLib">
+      <HintPath>Referencias_DLL\NiiPrinterCLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Nmeidevice, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Nmeidevice.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.SQLite, Version=1.0.117.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <HintPath>..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.117.0\lib\net45\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="cls_Actualizacion.vb" />
+    <Compile Include="cls_Bateria.vb" />
+    <Compile Include="cls_Cajascxn.vb" />
+    <Compile Include="cls_CashFlow.vb" />
+    <Compile Include="cls_CashWeb.vb" />
+    <Compile Include="cls_Correo.vb" />
+    <Compile Include="cls_DepositoXValidadorWebS.vb" />
+    <Compile Include="cls_FuncionesPublicas.vb" />
+    <Compile Include="cls_NPIticket80mmWinNormal.vb" />
+    <Compile Include="cls_Oledb.vb" />
+    <Compile Include="cls_Persistente.vb" />
+    <Compile Include="cls_Ticket58mmWinEmbbd.vb" />
+    <Compile Include="cls_Ticket58mmWinNormal.vb" />
+    <Compile Include="cls_Ticket80mmWinEmbbd.vb" />
+    <Compile Include="cls_Ticket80mmWinNormal.vb" />
+    <Compile Include="cls_Usuarios.vb" />
+    <Compile Include="Connected Services\QACashService\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\SissaCashflowService\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\WsRemision\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="frm_AccesoRecoleccion.Designer.vb">
+      <DependentUpon>frm_AccesoRecoleccion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_AccesoRecoleccion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_AgregarImporte.Designer.vb">
+      <DependentUpon>frm_AgregarImporte.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_AgregarImporte.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_CajasCxn.Designer.vb">
+      <DependentUpon>Frm_CajasCxn.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_CajasCxn.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_CatalogoCorreos.Designer.vb">
+      <DependentUpon>frm_CatalogoCorreos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_CatalogoCorreos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Cerradura.Designer.vb">
+      <DependentUpon>frm_Cerradura.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Cerradura.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Check_Validadores.Designer.vb">
+      <DependentUpon>frm_Check_Validadores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Check_Validadores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Config_Server.Designer.vb">
+      <DependentUpon>frm_Config_Server.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Config_Server.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_ConsultaAtascos.Designer.vb">
+      <DependentUpon>frm_ConsultaAtascos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_ConsultaAtascos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_DepositoXvalidadorNew.Designer.vb">
+      <DependentUpon>frm_DepositoXvalidadorNew.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_DepositoXvalidadorNew.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_ImprimirAtasco.Designer.vb">
+      <DependentUpon>frm_ImprimirAtasco.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_ImprimirAtasco.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Reporte.Designer.vb">
+      <DependentUpon>frm_Reporte.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Reporte.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Rest_Validador.designer.vb">
+      <DependentUpon>frm_Rest_Validador.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Rest_Validador.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Tablas.Designer.vb">
+      <DependentUpon>frm_Tablas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Tablas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_ListaCaja.Designer.vb">
+      <DependentUpon>frm_ListaCaja.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_ListaCaja.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_CatalogoCajas.Designer.vb">
+      <DependentUpon>frm_CatalogoCajas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_CatalogoCajas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Corte.Designer.vb">
+      <DependentUpon>frm_Corte.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Corte.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_BuscarActualizar.Designer.vb">
+      <DependentUpon>Frm_BuscarActualizar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_BuscarActualizar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Actualizar.Designer.vb">
+      <DependentUpon>frm_Actualizar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Actualizar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_CambiarIP.Designer.vb">
+      <DependentUpon>frm_CambiarIP.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_CambiarIP.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_CatalogoCaset.Designer.vb">
+      <DependentUpon>frm_CatalogoCaset.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_CatalogoCaset.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_CatalogoDenominacion.Designer.vb">
+      <DependentUpon>frm_CatalogoDenominacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_CatalogoDenominacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_CatalogoMonedas.Designer.vb">
+      <DependentUpon>frm_CatalogoMonedas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_CatalogoMonedas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_ConsultaDepositos.Designer.vb">
+      <DependentUpon>frm_ConsultaDepositos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_ConsultaDepositos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_ConsultaDepositosD.Designer.vb">
+      <DependentUpon>frm_ConsultaDepositosD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_ConsultaDepositosD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_ConsultaLog.Designer.vb">
+      <DependentUpon>frm_ConsultaLog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_ConsultaLog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_ConsultaMovimientos.Designer.vb">
+      <DependentUpon>frm_ConsultaMovimientos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_ConsultaMovimientos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_ConsultaRecoleccion.Designer.vb">
+      <DependentUpon>frm_ConsultaRecoleccion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_ConsultaRecoleccion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_ConsultaRecoleccionD.Designer.vb">
+      <DependentUpon>frm_ConsultaRecoleccionD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_ConsultaRecoleccionD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_ConsultaSaldos.Designer.vb">
+      <DependentUpon>frm_ConsultaSaldos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_ConsultaSaldos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_ConsultaUsuarios.Designer.vb">
+      <DependentUpon>frm_ConsultaUsuarios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_ConsultaUsuarios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_SaldoMenu.Designer.vb">
+      <DependentUpon>frm_SaldoMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_SaldoMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_CortePorDia.Designer.vb">
+      <DependentUpon>Frm_CortePorDia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_CortePorDia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Depositar.Designer.vb">
+      <DependentUpon>frm_Depositar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Depositar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_DepositoManual.Designer.vb">
+      <DependentUpon>frm_DepositoManual.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_DepositoManual.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_DepositoXvalidador.Designer.vb">
+      <DependentUpon>frm_DepositoXvalidador.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_DepositoXvalidador.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_EditarXML.Designer.vb">
+      <DependentUpon>frm_EditarXML.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_EditarXML.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_EscanearPuertos.Designer.vb">
+      <DependentUpon>frm_EscanearPuertos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_EscanearPuertos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_FechaModal.Designer.vb">
+      <DependentUpon>frm_FechaModal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_FechaModal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_FirmaElectronica.Designer.vb">
+      <DependentUpon>frm_FirmaElectronica.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_FirmaElectronica.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Login.Designer.vb">
+      <DependentUpon>frm_Login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Mensaje.Designer.vb">
+      <DependentUpon>frm_Mensaje.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Mensaje.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cls_VariablesPersistentes.vb" />
+    <Compile Include="frm_MenuAuditoria.Designer.vb">
+      <DependentUpon>frm_MenuAuditoria.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_MenuAuditoria.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_MenuGeneral.Designer.vb">
+      <DependentUpon>frm_MenuGeneral.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_MenuGeneral.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Parametros.Designer.vb">
+      <DependentUpon>frm_Parametros.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Parametros.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Privilegios.Designer.vb">
+      <DependentUpon>frm_Privilegios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Privilegios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Recolectar.Designer.vb">
+      <DependentUpon>frm_Recolectar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Recolectar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_RespaldarenWeb.Designer.vb">
+      <DependentUpon>frm_RespaldarenWeb.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_RespaldarenWeb.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_RespaldarSistema.Designer.vb">
+      <DependentUpon>frm_RespaldarSistema.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_RespaldarSistema.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_SQLCE4_Toolbox.Designer.vb">
+      <DependentUpon>frm_SQLCE4_Toolbox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_SQLCE4_Toolbox.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Tickets.Designer.vb">
+      <DependentUpon>frm_Tickets.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Tickets.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Tickets_Detalle.Designer.vb">
+      <DependentUpon>frm_Tickets_Detalle.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Tickets_Detalle.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_ValidarBillete.Designer.vb">
+      <DependentUpon>frm_ValidarBillete.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_ValidarBillete.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mdl_Teclado_Msg.vb" />
+    <Compile Include="mdl_VariablesPublicas.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Variables.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frm_AgregarImporte.resx">
+      <DependentUpon>frm_AgregarImporte.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_CajasCxn.resx">
+      <DependentUpon>Frm_CajasCxn.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_CatalogoCorreos.resx">
+      <DependentUpon>frm_CatalogoCorreos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Cerradura.resx">
+      <DependentUpon>frm_Cerradura.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Check_Validadores.resx">
+      <DependentUpon>frm_Check_Validadores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Config_Server.resx">
+      <DependentUpon>frm_Config_Server.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_ConsultaAtascos.resx">
+      <DependentUpon>frm_ConsultaAtascos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_DepositoXvalidadorNew.resx">
+      <DependentUpon>frm_DepositoXvalidadorNew.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_ImprimirAtasco.resx">
+      <DependentUpon>frm_ImprimirAtasco.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Reporte.resx">
+      <DependentUpon>frm_Reporte.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Rest_Validador.resx">
+      <DependentUpon>frm_Rest_Validador.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Tablas.resx">
+      <DependentUpon>frm_Tablas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_ListaCaja.resx">
+      <DependentUpon>frm_ListaCaja.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_CatalogoCajas.resx">
+      <DependentUpon>frm_CatalogoCajas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Corte.resx">
+      <DependentUpon>frm_Corte.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_BuscarActualizar.resx">
+      <DependentUpon>Frm_BuscarActualizar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Actualizar.resx">
+      <DependentUpon>frm_Actualizar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_CambiarIP.resx">
+      <DependentUpon>frm_CambiarIP.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_CatalogoCaset.resx">
+      <DependentUpon>frm_CatalogoCaset.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_CatalogoDenominacion.resx">
+      <DependentUpon>frm_CatalogoDenominacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_CatalogoMonedas.resx">
+      <DependentUpon>frm_CatalogoMonedas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_ConsultaDepositos.resx">
+      <DependentUpon>frm_ConsultaDepositos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_ConsultaDepositosD.resx">
+      <DependentUpon>frm_ConsultaDepositosD.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_ConsultaLog.resx">
+      <DependentUpon>frm_ConsultaLog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_ConsultaMovimientos.resx">
+      <DependentUpon>frm_ConsultaMovimientos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_ConsultaRecoleccion.resx">
+      <DependentUpon>frm_ConsultaRecoleccion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_ConsultaRecoleccionD.resx">
+      <DependentUpon>frm_ConsultaRecoleccionD.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_ConsultaSaldos.resx">
+      <DependentUpon>frm_ConsultaSaldos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_ConsultaUsuarios.resx">
+      <DependentUpon>frm_ConsultaUsuarios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_SaldoMenu.resx">
+      <DependentUpon>frm_SaldoMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_CortePorDia.resx">
+      <DependentUpon>Frm_CortePorDia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Depositar.resx">
+      <DependentUpon>frm_Depositar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_DepositoManual.resx">
+      <DependentUpon>frm_DepositoManual.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_DepositoXvalidador.resx">
+      <DependentUpon>frm_DepositoXvalidador.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_EditarXML.resx">
+      <DependentUpon>frm_EditarXML.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_EscanearPuertos.resx">
+      <DependentUpon>frm_EscanearPuertos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_FechaModal.resx">
+      <DependentUpon>frm_FechaModal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_FirmaElectronica.resx">
+      <DependentUpon>frm_FirmaElectronica.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Login.resx">
+      <DependentUpon>frm_Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Mensaje.resx">
+      <DependentUpon>frm_Mensaje.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_MenuAuditoria.resx">
+      <DependentUpon>frm_MenuAuditoria.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_MenuGeneral.resx">
+      <DependentUpon>frm_MenuGeneral.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Parametros.resx">
+      <DependentUpon>frm_Parametros.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Privilegios.resx">
+      <DependentUpon>frm_Privilegios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Recolectar.resx">
+      <DependentUpon>frm_Recolectar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_RespaldarenWeb.resx">
+      <DependentUpon>frm_RespaldarenWeb.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_RespaldarSistema.resx">
+      <DependentUpon>frm_RespaldarSistema.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_SQLCE4_Toolbox.resx">
+      <DependentUpon>frm_SQLCE4_Toolbox.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Tickets.resx">
+      <DependentUpon>frm_Tickets.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Tickets_Detalle.resx">
+      <DependentUpon>frm_Tickets_Detalle.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_ValidarBillete.resx">
+      <DependentUpon>frm_ValidarBillete.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\QACashService\Modulo_CashFlowV2.QACashService.Agregar_ComentarioTicket_TenicoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\QACashService\Modulo_CashFlowV2.QACashService.Consultar_ReporteSucursales_RFCResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\QACashService\Modulo_CashFlowV2.QACashService.Consultar_Sucursales_RFCResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\QACashService\Modulo_CashFlowV2.QACashService.Consultar_Tickets_SucursalResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\QACashService\Modulo_CashFlowV2.QACashService.Consultar_Tickets_Sucursal_IDResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\QACashService\Modulo_CashFlowV2.QACashService.Deposito_ConsultaResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\QACashService\Modulo_CashFlowV2.QACashService.DeposResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\QACashService\Modulo_CashFlowV2.QACashService.Finalizar_Ticket_TecnicoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\QACashService\Modulo_CashFlowV2.QACashService.Guardar_TicketResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\QACashService\Modulo_CashFlowV2.QACashService.Obtener_puntoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\QACashService\Modulo_CashFlowV2.QACashService.Obtener_RemisionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\QACashService\Modulo_CashFlowV2.QACashService.Recibir_Ticket_TecnicoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\QACashService\Modulo_CashFlowV2.QACashService.SetDataResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\QACashService\WsCashFlow.disco" />
+    <None Include="Connected Services\QACashService\configuration91.svcinfo" />
+    <None Include="Connected Services\QACashService\configuration.svcinfo" />
+    <None Include="Connected Services\QACashService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <Content Include="DLL\meidevice.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Nmeidevice.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\boton-de-encendido %282%29.png" />
+    <None Include="Resources\Logosissa.png" />
+    <Content Include="x86\SQLite.Interop.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x64\SQLite.Interop.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Connected Services\QACashService\WsCashFlow.wsdl" />
+    <None Include="Connected Services\SissaCashflowService\CashflowService.wsdl" />
+    <None Include="Connected Services\SissaCashflowService\CashflowService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\SissaCashflowService\CashflowService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\SissaCashflowService\CashflowService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\SissaCashflowService\Modulo_CashFlowV2.SissaCashflowService.eArchivo.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SissaCashflowService\Modulo_CashFlowV2.SissaCashflowService.FileTransferResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SissaCashflowService\Modulo_CashFlowV2.SissaCashflowService.TransaccionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\WsRemision\Modulo_CashFlowV2.WsRemision.Agregar_ComentarioTicket_TenicoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\WsRemision\Modulo_CashFlowV2.WsRemision.Consultar_ReporteSucursales_RFCResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\WsRemision\Modulo_CashFlowV2.WsRemision.Consultar_Sucursales_RFCResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\WsRemision\Modulo_CashFlowV2.WsRemision.Consultar_Tickets_SucursalResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\WsRemision\Modulo_CashFlowV2.WsRemision.Consultar_Tickets_Sucursal_IDResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\WsRemision\Modulo_CashFlowV2.WsRemision.Deposito_ConsultaResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\WsRemision\Modulo_CashFlowV2.WsRemision.DeposResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\WsRemision\Modulo_CashFlowV2.WsRemision.Finalizar_Ticket_TecnicoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\WsRemision\Modulo_CashFlowV2.WsRemision.Guardar_TicketResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\WsRemision\Modulo_CashFlowV2.WsRemision.Obtener_puntoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\WsRemision\Modulo_CashFlowV2.WsRemision.Obtener_RemisionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\WsRemision\Modulo_CashFlowV2.WsRemision.Recibir_Ticket_TecnicoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\WsRemision\Modulo_CashFlowV2.WsRemision.SetDataResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\WsRemision\WsCashFlow.wsdl" />
+    <Content Include="DB\Local.db">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="My Project\app.manifest">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Resources\Thumbs.db" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\SissaCashflowService\CashflowService.disco" />
+    <None Include="Connected Services\SissaCashflowService\configuration91.svcinfo" />
+    <None Include="Connected Services\SissaCashflowService\configuration.svcinfo" />
+    <None Include="Connected Services\SissaCashflowService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Connected Services\WsRemision\configuration91.svcinfo" />
+    <None Include="Connected Services\WsRemision\configuration.svcinfo" />
+    <None Include="Connected Services\WsRemision\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Connected Services\WsRemision\WsCashFlow.disco" />
+    <Content Include="Resources\Aceptar.png" />
+    <Content Include="Resources\Agregar.png" />
+    <Content Include="Resources\Alert_CashFlow.png" />
+    <None Include="Resources\Alert_CashFlow1.png" />
+    <Content Include="Resources\auditoria_software.png" />
+    <Content Include="Resources\Backspace.png" />
+    <Content Include="Resources\Baja.png" />
+    <Content Include="Resources\BajaReing.png" />
+    <Content Include="Resources\BorrarDepositos.png" />
+    <Content Include="Resources\btn_AgregarCaset.png" />
+    <None Include="Resources\btn_AgregarCaset1.png" />
+    <Content Include="Resources\btn_AgregarTodo.png" />
+    <Content Include="Resources\btn_AgregarUno.png" />
+    <None Include="Resources\btn_Atasco.bmp" />
+    <Content Include="Resources\btn_Auditoria.png" />
+    <Content Include="Resources\btn_CambiarPassword.png" />
+    <Content Include="Resources\btn_CatalogoCaset.png" />
+    <None Include="Resources\btn_Cerradura.png" />
+    <Content Include="Resources\btn_CerrarAplicacion.png" />
+    <Content Include="Resources\btn_CerrarSesion.png" />
+    <Content Include="Resources\btn_Atasco.png" />
+    <Content Include="Resources\btn_ConsultaDepositos.png" />
+    <Content Include="Resources\btn_ConsultaRetiros.png" />
+    <Content Include="Resources\btn_ConsultaSaldos.png" />
+    <Content Include="Resources\btn_ConsultaUsuarios.png" />
+    <None Include="Resources\btn_Correos.png" />
+    <Content Include="Resources\btn_Corte.png" />
+    <Content Include="Resources\btn_CorteDiario.png" />
+    <Content Include="Resources\btn_Depositos.png" />
+    <Content Include="Resources\btn_Descargar.png" />
+    <Content Include="Resources\btn_DesktopSize.png" />
+    <Content Include="Resources\btn_Dollar.png" />
+    <None Include="Resources\btn_EditarSQLCE.png" />
+    <Content Include="Resources\btn_EditarUsuario.png" />
+    <Content Include="Resources\btn_EliminarCaset.png" />
+    <Content Include="Resources\btn_EliminarUsuario.png" />
+    <None Include="Resources\btn_Execute.png" />
+    <Content Include="Resources\btn_Movimientos.png" />
+    <Content Include="Resources\btn_Parametros.png" />
+    <None Include="Resources\calendar_16.png" />
+    <None Include="Resources\Buzon.png" />
+    <None Include="Resources\btn_SubirArchivo.png" />
+    <None Include="Resources\EscanearPuerto.png" />
+    <None Include="Resources\Escanear.png" />
+    <Content Include="Resources\LOGO SISA.png" />
+    <Content Include="SignoPesos_Ico.ico" />
+    <None Include="Resources\btn_Pausa.png" />
+    <Content Include="Resources\btn_Privilegios.png" />
+    <Content Include="Resources\btn_QuitarTodo.png" />
+    <Content Include="Resources\btn_QuitarUno.png" />
+    <Content Include="Resources\btn_ReiniciarImpresora.png" />
+    <Content Include="Resources\btn_Retiros.png" />
+    <Content Include="Resources\btn_Sincronizar.png" />
+    <Content Include="Resources\btn_ValidarBilletes.png" />
+    <Content Include="Resources\Cancelar.png" />
+    <Content Include="Resources\cargando.gif" />
+    <Content Include="Resources\CASET1.png" />
+    <Content Include="Resources\CASET2.png" />
+    <Content Include="Resources\CheckBox_Checked_24x24.png" />
+    <Content Include="Resources\CheckBox_Tristate_24x24.png" />
+    <Content Include="Resources\CheckBox_Unchecked_24x24.png" />
+    <Content Include="Resources\Conectar.png" />
+    <Content Include="Resources\copy.png" />
+    <Content Include="Resources\C_Depositos.png" />
+    <Content Include="Resources\C_DepositosD.png" />
+    <Content Include="Resources\C_Movimientos.png" />
+    <Content Include="Resources\C_Retiros.png" />
+    <Content Include="Resources\C_RetirosD.png" />
+    <Content Include="Resources\Detalle.png" />
+    <Content Include="Resources\Down_arrow.png" />
+    <Content Include="Resources\Enter.png" />
+    <Content Include="Resources\error_128.png" />
+    <Content Include="Resources\Examinar.png" />
+    <Content Include="Resources\Finalizar.png" />
+    <Content Include="Resources\Guardar.png" />
+    <Content Include="Resources\img_Bajar.png" />
+    <Content Include="Resources\img_Subir.png" />
+    <Content Include="Resources\Imprimir.png" />
+    <Content Include="Resources\information_128.png" />
+    <Content Include="Resources\Inicializar.png" />
+    <Content Include="Resources\Mostrar.png" />
+    <Content Include="Resources\MXP100.jpg" />
+    <Content Include="Resources\MXP1000.jpg" />
+    <Content Include="Resources\MXP20.jpg" />
+    <Content Include="Resources\MXP200.jpg" />
+    <Content Include="Resources\MXP50.jpg" />
+    <Content Include="Resources\MXP500.jpg" />
+    <Content Include="Resources\Negar.png" />
+    <Content Include="Resources\NoId.jpg" />
+    <Content Include="Resources\Ok_128.png" />
+    <Content Include="Resources\Pesos.png" />
+    <Content Include="Resources\question_128.png" />
+    <Content Include="Resources\RadioButton_Checked_24x24.png" />
+    <Content Include="Resources\RadioButton_UnChecked_24x24.png" />
+    <Content Include="Resources\Refrescar.png" />
+    <Content Include="Resources\ReiniciarPC.png" />
+    <Content Include="Resources\Respaldar.png" />
+    <Content Include="Resources\Salir.png" />
+    <Content Include="Resources\ScriptSQL.png" />
+    <Content Include="Resources\TarjetaRed.png" />
+    <Content Include="Resources\Up_Arrow.png" />
+    <Content Include="Resources\USD1.jpg" />
+    <Content Include="Resources\USD10.jpg" />
+    <Content Include="Resources\USD100.jpg" />
+    <Content Include="Resources\USD2.jpg" />
+    <Content Include="Resources\USD20.jpg" />
+    <Content Include="Resources\USD5.jpg" />
+    <Content Include="Resources\USD50.jpg" />
+    <Content Include="Resources\warning_128.png" />
+    <Content Include="Resources\xml.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.SQL.Server.Compact.4.0">
+      <Visible>False</Visible>
+      <ProductName>SQL Server Compact 4.0 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Connected Services\QACashService\" />
+    <WCFMetadataStorage Include="Connected Services\SissaCashflowService\" />
+    <WCFMetadataStorage Include="Connected Services\WsRemision\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Este proyecto hace referencia a los paquetes NuGet que faltan en este equipo. Use la restauración de paquetes NuGet para descargarlos. Para obtener más información, consulte http://go.microsoft.com/fwlink/?LinkID=322105. El archivo que falta es {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.targets'))" />
+    <Error Condition="!Exists('..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.117.0\build\net45\Stub.System.Data.SQLite.Core.NetFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.117.0\build\net45\Stub.System.Data.SQLite.Core.NetFramework.targets'))" />
+  </Target>
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" />
+  <Import Project="..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.117.0\build\net45\Stub.System.Data.SQLite.Core.NetFramework.targets" Condition="Exists('..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.117.0\build\net45\Stub.System.Data.SQLite.Core.NetFramework.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

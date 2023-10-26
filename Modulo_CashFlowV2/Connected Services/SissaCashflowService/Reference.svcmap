@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="7eacef76-d302-4182-928e-bbd67ea60e71" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://sissa-ws-test.azurewebsites.net/CashflowService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="CashflowService.wsdl" MetadataType="Wsdl" ID="53bd84d1-2fe9-41b1-b526-d3629877e6cb" SourceId="1" SourceUrl="http://sissa-ws-test.azurewebsites.net/CashflowService.svc?wsdl" />
+    <MetadataFile FileName="CashflowService.xsd" MetadataType="Schema" ID="e43163a3-5943-49a2-bc11-db8bf67d3a74" SourceId="1" SourceUrl="http://sissa-ws-test.azurewebsites.net/CashflowService.svc?xsd=xsd0" />
+    <MetadataFile FileName="CashflowService1.xsd" MetadataType="Schema" ID="696b6a38-ed57-439b-869d-ca3709c1e219" SourceId="1" SourceUrl="http://sissa-ws-test.azurewebsites.net/CashflowService.svc?xsd=xsd1" />
+    <MetadataFile FileName="CashflowService2.xsd" MetadataType="Schema" ID="f4d41a04-1b02-45df-af93-c4d787b58eb6" SourceId="1" SourceUrl="http://sissa-ws-test.azurewebsites.net/CashflowService.svc?xsd=xsd2" />
+    <MetadataFile FileName="CashflowService.disco" MetadataType="Disco" ID="ac2f3294-564a-4cb6-8443-6f3b904298b3" SourceId="1" SourceUrl="http://sissa-ws-test.azurewebsites.net/CashflowService.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

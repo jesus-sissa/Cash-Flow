@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectView>ShowAllFiles</ProjectView>
+    <PublishUrlHistory>D:\REPOSITORY\DEPLOYMENT\CashFlow\|\\MTYSTSB1-P04\Users\juan.mora\Desktop\Pakete CashFlow\|C:\Users\juan.mora\Desktop\Pakete CashFlow\|C:\Users\juan.mora\Documents\|C:\Users\jesus.ortega\Desktop\RESPALDOJ\SISSA\PROYECTOS\PublicacionTemporal\CashFlow\</PublishUrlHistory>
+    <InstallUrlHistory>https://www.sissaseguridad.com/CashFlowQA/|https://www.sissaseguridad.com/CashFlow3.0/|https://www.sissaseguridad.com/CashFlow/|http://mail-mty-v01/CashFlow/</InstallUrlHistory>
+    <SupportUrlHistory />
+    <UpdateUrlHistory />
+    <BootstrapperUrlHistory>https://www.microsoft.com/es-mx/download/details.aspx%3fid=30709|C:\Users\juan.mora\Desktop\Pakete CashFlow\SQL Compac4.0|C:\Users\juan.mora\Documents\Nueva carpeta\1\CASHFLOW V3.0\CASHFLOW REMISION DIGITAL a partir v73\Modulo_CashFlowV2\SQL Compac4.0</BootstrapperUrlHistory>
+    <ErrorReportUrlHistory />
+    <FallbackCulture>es-ES</FallbackCulture>
+    <VerifyUploadedFiles>false</VerifyUploadedFiles>
+  </PropertyGroup>
+  <PropertyGroup>
+    <EnableSecurityDebugging>false</EnableSecurityDebugging>
+  </PropertyGroup>
+</Project>

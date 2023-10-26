@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://schemas.datacontract.org/2004/07/Cashflow.Web.Service" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Cashflow.Web.Service" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://sissa-ws-test.azurewebsites.net/CashflowService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:complexType name="TransaccionEntityObject">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Acreditado" type="xs:boolean" />
+      <xs:element minOccurs="0" name="ClaveCaja" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ClaveCajero" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ClaveCliente" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ClaveSucursal" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Divisa" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EsEfectivo" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Fecha" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Folio" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="HoraFin" type="ser:duration" />
+      <xs:element minOccurs="0" name="HoraInicio" type="ser:duration" />
+      <xs:element minOccurs="0" name="IdCaja" type="xs:int" />
+      <xs:element minOccurs="0" name="IdCorte" type="xs:int" />
+      <xs:element minOccurs="0" name="IdRetiro" type="xs:int" />
+      <xs:element minOccurs="0" name="IdTransaccion" type="xs:int" />
+      <xs:element minOccurs="0" name="ImporteOtros" type="xs:decimal" />
+      <xs:element minOccurs="0" name="ImporteOtrosD" type="xs:decimal" />
+      <xs:element minOccurs="0" name="ImporteTotal" type="xs:decimal" />
+      <xs:element minOccurs="0" name="Movimientos" nillable="true" type="tns:ArrayOfTransaccionDetailEntityObject" />
+      <xs:element minOccurs="0" name="NumeroCuenta" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NumeroEnvase" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NumeroRemision" type="xs:double" />
+      <xs:element minOccurs="0" name="Observaciones" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Referencia" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Status" type="ser:char" />
+      <xs:element minOccurs="0" name="Tipo" type="xs:int" />
+      <xs:element minOccurs="0" name="TipoCambio" type="xs:decimal" />
+      <xs:element minOccurs="0" name="TotalMXN" type="xs:decimal" />
+      <xs:element minOccurs="0" name="TotalUSD" type="xs:decimal" />
+      <xs:element minOccurs="0" name="TotalUSDConvert" type="xs:decimal" />
+      <xs:element minOccurs="0" name="UsuarioRegistro" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="rowID" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TransaccionEntityObject" nillable="true" type="tns:TransaccionEntityObject" />
+  <xs:complexType name="ArrayOfTransaccionDetailEntityObject">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="TransaccionDetailEntityObject" nillable="true" type="tns:TransaccionDetailEntityObject" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTransaccionDetailEntityObject" nillable="true" type="tns:ArrayOfTransaccionDetailEntityObject" />
+  <xs:complexType name="TransaccionDetailEntityObject">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CantidadPiezas" type="xs:int" />
+      <xs:element minOccurs="0" name="ClaveDenominacion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ClaveMoneda" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ClaveSucursal" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Denominacion" type="xs:decimal" />
+      <xs:element minOccurs="0" name="ID" type="xs:int" />
+      <xs:element minOccurs="0" name="IdTransaccion" type="xs:int" />
+      <xs:element minOccurs="0" name="Importe" type="xs:decimal" />
+      <xs:element minOccurs="0" name="NumeroValidador" type="xs:int" />
+      <xs:element minOccurs="0" name="SerieCasete" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SerieValidador" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TransaccionDetailEntityObject" nillable="true" type="tns:TransaccionDetailEntityObject" />
+  <xs:complexType name="TransaccionResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="HasError" type="xs:boolean" />
+      <xs:element minOccurs="0" name="ResultMessage" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RowID" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TransaccionResponse" nillable="true" type="tns:TransaccionResponse" />
+  <xs:complexType name="ArrayOfTransaccionEntityObject">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="TransaccionEntityObject" nillable="true" type="tns:TransaccionEntityObject" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTransaccionEntityObject" nillable="true" type="tns:ArrayOfTransaccionEntityObject" />
+  <xs:complexType name="TransaccionLogEntity">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ClaveSucursal" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Descripcion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Fecha" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Hora" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IdCajero" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IdLogDescripcion" type="xs:int" />
+      <xs:element minOccurs="0" name="IdPantalla" type="xs:int" />
+      <xs:element minOccurs="0" name="IdUsuario" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TransaccionLogEntity" nillable="true" type="tns:TransaccionLogEntity" />
+  <xs:complexType name="eArchivo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ContenidoCheque" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ContenidoDeposito" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Fecha" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="IdArchivo" type="xs:int" />
+      <xs:element minOccurs="0" name="NombreArchivoCheque" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NombreArchivoDeposito" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="eArchivo" nillable="true" type="tns:eArchivo" />
+  <xs:complexType name="FileTransferResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Fecha" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="FileName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IdArchivo" type="xs:int" />
+      <xs:element minOccurs="0" name="ResultCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ResultMessage" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="FileTransferResponse" nillable="true" type="tns:FileTransferResponse" />
+</xs:schema>

@@ -1,0 +1,1004 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Modulo_CashFlowV2
+</name>
+</assembly>
+<members>
+<member name="M:Modulo_CashFlowV2.cls_CashFlow.fn_Menus_Open(System.Byte,System.Int32,System.Decimal,System.Decimal)">
+	<summary>
+ Función que gestionará la apertura de Menús
+ </summary>
+	<param name="Op_Menu">Opción del Menú a Abrir</param>
+	<remarks>
+	</remarks>
+</member><member name="M:Modulo_CashFlowV2.cls_CashFlow.fn_Depositos_GuardarBillete(System.String,System.Int32,System.String,System.String,System.String)">
+	<summary>
+ Guardar Detalle del Depósito
+ </summary>
+	<param name="ClaveMoneda">Tipo de Moneda</param>
+	<param name="Denominacion">La Denominación de la Moneda</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Modulo_CashFlowV2.cls_CashFlow.fn_Depositos_GuardarBilleteDesconexion(System.String,System.String,System.Windows.Forms.ListView@,System.String,System.String)">
+	<summary>
+ Guardar Detalle de Depósito depués de un error en la Conexión
+ </summary>
+	<param name="Clave_Denominacion">Tipo de Moneda</param>
+	<param name="Denominacion">La Denominación de la Moneda</param>
+	<param name="lsv">Lista que se Llenará con la Información</param>
+	<remarks></remarks>
+</member><member name="M:Modulo_CashFlowV2.cls_CashFlow.fn_Depositos_Detalle(System.String)">
+	<summary>
+ Registro de los Detalles del Depósito
+ </summary>
+	<param name="Detalle">Información a Guardar</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Modulo_CashFlowV2.cls_CashFlow.fn_Depositos_Open(System.Byte)">
+	<summary>
+ Nuevo Depósito
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Modulo_CashFlowV2.cls_CashFlow.fn_Depositos_Close(System.Decimal,System.Int32,System.Int32,System.Byte)">
+	<summary>
+ Cerrar Depósito
+ </summary>
+	<param name="ImporteTotal">Cantidad Total que fue guardado en el Depósito</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Modulo_CashFlowV2.cls_CashFlow.fn_DepositosPendientes_CloseAnterior">
+	<summary>
+ Finalizar depósito en Status 'A' que quedo pendiente en caso de haberse cerrado  la pantalla Depósitos
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Modulo_CashFlowV2.cls_CashFlow.fn_ConsultaDepositos_LlenarCombo(System.Windows.Forms.ComboBox@)">
+	<summary>
+ Llenar la Lista Desplegable de los Usuarios
+ </summary>
+	<param name="cmb">Lista Desplegable que se Llenará con la Información</param>
+	<remarks></remarks>
+</member><member name="M:Modulo_CashFlowV2.cls_CashFlow.fn_ConsultaDepositos_Llenar(System.DateTime,System.DateTime,System.Int32,System.Windows.Forms.ListView@,System.String)">
+	<summary>
+ Llenar la Lista con los Depósitos Realizados
+ </summary>
+	<param name="Desde">Fecha Inicial</param>
+	<param name="Hasta">Fecha Final</param>
+	<param name="Usuario_Clave">Clave del Usuario a Consultar</param>
+	<param name="lsv">Lista que se Llenará con la Información</param>
+	<remarks></remarks>
+</member><member name="M:Modulo_CashFlowV2.cls_CashFlow.fn_ConsultaDepositos_Reimprimir(System.Int32,System.Byte)">
+	<summary>
+ Reimprime el Ticket del deposito seleccionado
+ </summary>
+	<param name="Id_Deposito"></param>
+	<remarks></remarks>
+</member><member name="M:Modulo_CashFlowV2.cls_CashFlow.fn_ConsultaDepositosD_Llenar(System.Int32,System.Windows.Forms.ListView@)">
+	<summary>
+ Llenar la Lista con el Detalle de Depósitos Realizados
+ </summary>
+	<param name="Id_Deposito">Depósito que se Desglozará</param>
+	<param name="lsv">Lista que se Llenará con la Información</param>
+	<remarks></remarks>
+</member><member name="M:Modulo_CashFlowV2.cls_CashFlow.fn_ConsultaSaldos_Llenar(System.Windows.Forms.ListView@,System.String)">
+	<summary>
+ Llenar la Lista de el Saldo Actual
+ </summary>
+	<param name="lsv">Lista que se Llenará con la Información</param>
+	<remarks></remarks>
+</member><member name="M:Modulo_CashFlowV2.cls_CashFlow.fn_ConsultaSaldos_Imprimir">
+	<summary>
+ Imprimir el Saldo Actual
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Modulo_CashFlowV2.cls_CashFlow.fn_ConsultaMovimientos_Llenar(System.DateTime,System.DateTime,System.Windows.Forms.ListView@)">
+	<summary>
+ Llenar la Lista de Movimientos de Acuerdo al filtro establecido
+ </summary>
+	<param name="Desde">Fecha Inicial</param>
+	<param name="Hasta">Fecha Final</param>
+	<param name="lsv">Lista que se Llenará con la Información</param>
+	<remarks></remarks>
+</member><member name="M:Modulo_CashFlowV2.cls_CashFlow.fn_ConsultaMovimientos_Imprimir(System.DateTime,System.DateTime)">
+	<summary>
+ Imprimir los Movimientos de Acuerdo al rango de Fecha que seleccionamos
+ <param name="Desde">Fecha Inicial</param>
+		<param name="Hasta">Fecha Final</param>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:Modulo_CashFlowV2.cls_CashFlow.fn_Retiros_LlenarCombo(System.Windows.Forms.ComboBox@,System.Int32,System.Int32)">
+	<summary>
+ Llenar la Lista Desplegable de los Casets
+ </summary>
+	<param name="cmb">Lista Desplegable que se Llenará con la Información</param>
+	<remarks></remarks>
+</member><member name="M:Modulo_CashFlowV2.cls_CashFlow.fn_Retiros_LlenarXcaset(System.String)">
+	<summary>
+ Consulta para saber cuanto saldo hay en el caset N (modif 28/10/2015)
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Modulo_CashFlowV2.cls_CashFlow.fn_Retiros_Retiro(System.Decimal,System.Int32,System.Int32,System.Decimal,System.String,System.Decimal,System.String,System.Int32,System.Int32,System.String)">
+	<summary>
+ Realizar el Retiro de la Cantidad Mostrada
+ </summary>
+	<param name="Remision">Número de Remisón utilizado para llevarse el Dinero</param>
+	<param name="CasetNuevo">Clave de Caset que reemplazará al Anterior</param>
+	<param name="NumeroEnvase">Número de Envase utilizado para llevarse el Dinero</param>
+	<param name="Observaciones">Observaciones del Retiro</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Modulo_CashFlowV2.cls_CashFlow.fn_ConsultaRetiros_LlenarCombo(System.Windows.Forms.ComboBox@)">
+	<summary>
+ Llenar la Lista Desplegable de los Usuarios
+ </summary>
+	<param name="cmb">Lista Desplegable que se Llenará con la Información</param>
+	<remarks></remarks>
+</member><member name="M:Modulo_CashFlowV2.cls_CashFlow.fn_ConsultaRetiros_Llenar(System.DateTime,System.DateTime,System.Int32,System.Windows.Forms.ListView@)">
+	<summary>
+ Llenar la Lista con los Retiros Realizados
+ </summary>
+	<param name="Desde">Fecha Inicial</param>
+	<param name="Hasta">Fecha Final</param>
+	<param name="Usuario_Clave">Clave del Usuario a Consultar</param>
+	<param name="lsv">Lista que se Llenará con la Información</param>
+	<remarks></remarks>
+</member><member name="M:Modulo_CashFlowV2.cls_CashFlow.fn_ConsultaRetiros_Reimprimir(System.Int32)">
+	<summary>
+  'Reimprime el ticket de Retiros
+ </summary>
+	<param name="Id_Retiro"></param>
+	<remarks></remarks>
+</member><member name="M:Modulo_CashFlowV2.cls_CashFlow.fn_ConsultaRetirosD_Llenar(System.Int32,System.Windows.Forms.ListView@,System.Decimal@)">
+	<summary>
+ Llenar la Lista con el Detalle de Retiros Realizados
+ </summary>
+	<param name="Id_Retiro">Depósito que se Desglozará</param>
+	<param name="lsv">Lista que se Llenará con la Información</param>
+	<remarks></remarks>
+</member><member name="M:Modulo_CashFlowV2.cls_CashFlow.fn_RetirosCancelar_Llenar(System.Windows.Forms.ListView@,System.Windows.Forms.Label@,System.Windows.Forms.Label@,System.Windows.Forms.Label@,System.Windows.Forms.Label@,System.Windows.Forms.Label@,System.Windows.Forms.Label@)">
+	<summary>
+ Llenar la Lista con el Detalle sobre el Último Retiro Realizado
+ </summary>
+	<param name="lsv">Lista que se Llenará con la Información</param>
+	<param name="lbl_Fecha">Se agregará la Fecha en que se realizó el Retiro</param>
+	<param name="lbl_Hora">Se agregará la Hora en que se realizó el Retiro</param>
+	<param name="lbl_Usuario">Se agregará el Usuario que realizó el Retiro</param>
+	<param name="lbl_CiaTV">Se agregará la Compañía se llevó el Retiro</param>
+	<param name="lbl_Remision">Se agregará la Remisión con la que se llevó el Retiro</param>
+	<param name="lbl_Envase">Se agregará el Envase con el que se llevó el Retiro</param>
+	<remarks></remarks>
+</member><member name="M:Modulo_CashFlowV2.cls_CashFlow.fn_ConsultaPrivilegios_LlenatDT(System.Int32,System.Byte)">
+	<summary>
+ Llena un DataTable con los privilegios que tiene el Usuario logueado
+ serviran para crear los botones al Leer el form.
+ </summary>
+	<param name="ClaveUserN"> Usuario que se ha logueado en el Sistema</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Modulo_CashFlowV2.cls_CashFlow.fn_PrivilegiosAsignados_LlenarLista(System.Windows.Forms.ListBox@,System.Int32)">
+	<summary>
+ Llena la lista con los privilegios asignados a un Usuario seleccionado
+ </summary>
+	<param name="lst"></param>
+	<param name="ClaveUserN"></param>
+	<remarks></remarks>
+</member><member name="M:Modulo_CashFlowV2.cls_CashFlow.fn_Privilegios_LlenarLista(System.Windows.Forms.ListBox@,System.Byte)">
+	<summary>
+ llena la lista Privilegios si es Admin tiene Todos, sino-&gt; solo tiene Local
+ </summary>
+	<param name="lst"> lista a llenar con los privilegios que le corresponden</param>
+	<param name="UsuarioTipoN">usuario que se ha seleccionado de la lista de Usuarios</param>
+	<remarks></remarks>
+</member><member name="M:Modulo_CashFlowV2.cls_CashFlow.fn_Usuarios_LlenarLista(System.Windows.Forms.ListBox@)">
+	<summary>
+ Llena la lista con los usuarios del tipo 1=Local(Operativos) y 2 Administrativos
+ </summary>
+	<param name="lst"> Listbox que llena los usuarios</param>
+	<remarks>
+	</remarks>
+</member><member name="M:Modulo_CashFlowV2.cls_CashFlow.fn_Usuarios_Clases(System.Windows.Forms.ComboBox@)">
+	<summary>
+ Llenar la Lista Desplegable de las Clases de Usuarios (Local y Administrador)
+ </summary>
+	<param name="cmb">Lista Desplegable que se Llenará con la Información</param>
+	<remarks></remarks>
+</member><member name="M:Modulo_CashFlowV2.cls_CashFlow.fn_Usuarios_Llenar(System.Windows.Forms.ListView@)">
+	<summary>
+ Llenar la Lista de los Usuarios existentes (Locales y Administradores)
+ </summary>
+	<param name="lsv">Lista que se Llenará con la Información</param>
+	<remarks></remarks>
+</member><member name="M:Modulo_CashFlowV2.cls_CashFlow.fn_Usuarios_Status(System.Int32,System.String)">
+	<summary>
+ Realizar la Reactivación o Baja de un Usuario
+ </summary>
+	<param name="Clave_Usuario">Clave del Usuario que se cambiará de Status</param>
+	<param name="Status">Status Actual del Usuario</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Modulo_CashFlowV2.cls_CashFlow.fn_Usuarios_Read(System.Int32)">
+	<summary>
+ Traer todos los datos del Usuario
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Modulo_CashFlowV2.cls_CashFlow.fn_ValidarCapacidad">
+	<summary>
+ Validar la Capacidad que lleva el Caset Actual
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Modulo_CashFlowV2.cls_CashFlow.fn_ValidarCapacidad_C2">
+	<summary>
+ Validar la Capacidad que lleva el Caset Actual 2
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Modulo_CashFlowV2.cls_CashFlow.fn_Casets_Llenar(System.Windows.Forms.ListView@)">
+	<summary>
+ Llenar la Lista de los Casets existentes
+ </summary>
+	<param name="lsv">Lista que se Llenará con la Información</param>
+	<remarks></remarks>
+</member><member name="M:Modulo_CashFlowV2.cls_CashFlow.fn_Casets_Create(System.String,System.String,System.String,System.String)">
+	<summary>
+ Generear Nuevo Registro de un Caset
+ </summary>
+	<param name="Clave_Caset">Clave que se Agregará al Caset</param>
+	<param name="Serie_Caset">Número de Serie</param>
+	<param name="Capacidad">Capacidad Máxima del Caset</param>
+	<param name="PorcentajeAlerta">Porcentaje que se manejará para prevenir al Usuario sobre un Caset casi Lleno</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Modulo_CashFlowV2.cls_CashFlow.fn_Casets_Status(System.String,System.String)">
+	<summary>
+ Realizar la Reactivación o Baja de un Caset
+ </summary>
+	<param name="SerieCaset">Id del Caset que se cambiará de Status</param>
+	<param name="Status">Status Actual del Caset</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Modulo_CashFlowV2.cls_CashFlow.fn_Casets_GetClave(System.Int32)">
+	<summary>
+ Función que devuelve la Clave de un Caset
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Modulo_CashFlowV2.cls_CashFlow.fn_Casets_ClaveExiste(System.String)">
+	<summary>
+ Función que indica si existe o no una Clave de Caset
+ </summary>
+	<param name="Clave_Caset">Clave de Caset a Revisar</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Modulo_CashFlowV2.cls_CashFlow.fn_Casets_Count">
+	<summary>
+ Saber la Cantidad de Registros de Caset
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Modulo_CashFlowV2.cls_CashFlow.fn_Casets_GetParametros">
+	<summary>
+ Cargar en Parámetros la Información del Caset a Utilizar
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Modulo_CashFlowV2.cls_CashFlow.fn_Denominaciones_LlenarCombo(System.Windows.Forms.ComboBox@)">
+	<summary>
+ Llenar la Lista Desplegable de las Monedas
+ </summary>
+	<param name="cmb">Lista Desplegable que se Llenará con la Información</param>
+	<remarks></remarks>
+</member><member name="M:Modulo_CashFlowV2.cls_CashFlow.fn_Denominaciones_Llenar(System.Windows.Forms.ListView@,System.String)">
+	<summary>
+ Llenar la Lista de las Denominaciones existentes
+ </summary>
+	<param name="lsv">Lista que se Llenará con la Información</param>
+	<param name="ClaveMoneda"> clave moneda por cual filtrar y regresar la lista</param>
+	<remarks></remarks>
+</member><member name="M:Modulo_CashFlowV2.cls_CashFlow.fn_Denominaciones_Create(System.String,System.String)">
+	<summary>
+ Generear Nuevo Registro de una Denominación
+ </summary>
+	<param name="Clave_Moneda">Moneda con la que se Relacionará la Denominación</param>
+	<param name="Denominacion">Descripcion de la Denominación</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Modulo_CashFlowV2.cls_CashFlow.fn_Denominaciones_Delete(System.String)">
+	<summary>
+ Eliminar Denominación
+ </summary>
+	<param name="Clave_Denominacion">Denominacion que se Eliminará</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Modulo_CashFlowV2.cls_CashFlow.fn_Denominaciones_VerificarExistencia">
+	<summary>
+ Para saber si existen Denominaciones capturadas
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Modulo_CashFlowV2.cls_CashFlow.fn_Monedas_Create(System.String,System.String)">
+	<summary>
+ Genera Un nuevo Registro en Catalogo Monedas
+ </summary>
+	<param name="NombreMoneda"></param>
+	<param name="Clave_Moneda"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Modulo_CashFlowV2.cls_CashFlow.fn_Monedas_Delete(System.String)">
+	<summary>
+ Eliminacion de la Moneda
+ </summary>
+	<param name="Clave_Moneda"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Modulo_CashFlowV2.cls_CashFlow.fn_Monedas_Llenar(System.Windows.Forms.ListView@)">
+	<summary>
+ Llenar el listview con el Catálogo Monedas
+ </summary>
+	<param name="lsv"></param>
+	<remarks></remarks>
+</member><member name="M:Modulo_CashFlowV2.cls_CashFlow.fn_Monedas_VerificarExistencia">
+	<summary>
+ Para saber si existen Monedas capturadas
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Modulo_CashFlowV2.cls_CashFlow.fn_ConsultaDetalle_Llenar(System.String,System.Windows.Forms.ListView@)">
+	<summary>
+ Llenar la Lista de Detalle con todos las Acciones Realizadas
+ </summary>
+	<param name="lsv">Lista que se Llenará con la Información</param>
+	<remarks></remarks>
+</member><member name="M:Modulo_CashFlowV2.cls_CashFlow.fn_Parametros_Validar">
+	<summary>
+ Validación para revisar la existencia del Archivo Persistente
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Modulo_CashFlowV2.cls_CashFlow.fn_Parametros_LlenarCombo(System.Windows.Forms.ComboBox@)">
+	<summary>
+ Llenar la Lista Desplegable de los Casets
+ </summary>
+	<param name="cmb">Lista Desplegable que se Llenará con la Información</param>
+	<remarks></remarks>
+</member><member name="M:Modulo_CashFlowV2.cls_CashFlow.fn_Parametros_Crear(System.Int32,System.Int32,System.Int32,System.Byte,System.Boolean,System.String,System.Int32,System.String,System.Int32,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Boolean,System.String,System.String,System.String,System.Int32,System.Int32,System.Int32,System.String,System.String,System.Int32,System.Byte,System.String,System.String,System.Int32,System.String,System.String,System.String,System.String,System.Boolean,System.Boolean,System.Byte,System.Int32,System.Int32,System.Byte,System.Byte,System.Byte,System.String,System.DateTime,System.String,System.Boolean)">
+	<summary>
+ Crear los Parámetros y Cargar las Variables Globales
+ </summary>
+	<param name="MsgFuente">Tamaño de la Fuente del Texto en los Menajes</param>
+	<param name="LblFuente">Tamaño de la Fuente de las etiquetas</param>
+	<param name="CmdFuente">Tamaño de la Fuente de los Botones de Comando</param>
+	<param name="SizePapel">Tamaño de papel usado en la Impresora</param>
+	<param name="CifradoCompleto">Cifrar el Archivo del Log completamente o sólo por Líneas</param>
+	<param name="MaxGuardar">Máximo de Intentos que se deberá usar para guardar en el Log</param>
+	<param name="Modo_Cnn">Base de Datos a Utilizar</param>
+	<param name="Cia_Tv">Compañía de Traslado que realizará los Retiros</param>
+	<param name="Id_Caset">Caset a Utilizar</param>
+	<param name="Nombre"> Nombre del Cliente para imprimir en los tickets</param>
+	<param name="Ubicacion">Direccion del cliente para imprimir en los tickets</param>
+	<param name="Contacto">Telefono del cliente para imprimir en los tickets</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Modulo_CashFlowV2.cls_CashFlow.fn_SincronizarPrivilegiosWeb_aLOCAL(System.String)">
+	<summary>
+ Funcion que sincroniza los privilegios de Web--&gt; hacia Local
+ se usa esta funcion cuando la Prioridad es Web
+ </summary>
+	<param name="ClaveUser"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Modulo_CashFlowV2.cls_CashFlow.fn_SincronizarPrivilegiosLocal_aWEB(System.Int32)">
+	<summary>
+ Funcion que sincroniza Privilegios de Usuarios de local--&gt;hacia Web
+ se usa esta funcion cuando la Prioridad es Local
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:Modulo_CashFlowV2.stc_80mmWinEmbbd">
+	<summary>
+ Estructura del Recibo de 80mm Windows Embebido
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Modulo_CashFlowV2.cls_Ticket80mmWinEmbbd.Imprimir(Modulo_CashFlowV2.stc_80mmWinEmbbd)">
+	<summary>
+ Función que Manda a Imprimir un Archivo
+ </summary>
+	<param name="Recibo"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Modulo_CashFlowV2.cls_Ticket80mmWinEmbbd.ValidarImpresora">
+	<summary>
+ Revisar si la Impresora es la Apropiada
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:Modulo_CashFlowV2.cls_Ticket80mmWinEmbbd">
+	<summary>
+ Generación de la Impresión 80mm (Windows Embebido)
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Modulo_CashFlowV2.cls_VariablesPersistentes.Existe">
+	<summary>
+ Revisa la Existencia del Archivo Persistente
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Modulo_CashFlowV2.cls_VariablesPersistentes.Cargar">
+	<summary>
+ Carga las Variables Persistentes del Archivo XML y asignarlas a las Variables Globales
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Modulo_CashFlowV2.cls_VariablesPersistentes.Persistir">
+	<summary>
+ Crear el Archivo XML con las Variables Persistentes
+ </summary>
+	<remarks></remarks>
+</member><member name="P:Modulo_CashFlowV2.mdl_VariablesPublicas.CustomFecha">
+	<summary>
+ Fechapersonalizda con _ para nombre de archivo
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Modulo_CashFlowV2.mdl_VariablesPublicas.CustomHora">
+	<summary>
+ Hora Personalizada con _ para nombre de archivo
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Modulo_CashFlowV2.mdl_VariablesPublicas.Fecha">
+	<summary>
+ Regresa la Fecha Actual en formato yyyy-MM-dd
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Modulo_CashFlowV2.mdl_VariablesPublicas.Hora">
+	<summary>
+ Regresa la Hora Actual en formato HH:mm:ss (24 hrs.)
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:Modulo_CashFlowV2.stc_58mmWinEmbbd">
+	<summary>
+ Estructura del Recibo de 58mm Windows Embebido
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Modulo_CashFlowV2.cls_Ticket58mmWinEmbbd.Imprimir(Modulo_CashFlowV2.stc_58mmWinEmbbd)">
+	<summary>
+ Función que Manda a Imprimir un Archivo
+ </summary>
+	<param name="Recibo"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Modulo_CashFlowV2.cls_Ticket58mmWinEmbbd.ValidarImpresora">
+	<summary>
+ Revisar si la Impresora es la Apropiada
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:Modulo_CashFlowV2.cls_Ticket58mmWinEmbbd">
+	<summary>
+ Generación de la Impresión 58mm (Windows Embebido)
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Modulo_CashFlowV2.cls_Actualizacion.fn_Buscar_ColumnaenTabla(System.Data.SqlServerCe.SqlCeConnection,System.Data.SqlServerCe.SqlCeTransaction,System.String,System.String)">
+	<summary>
+ Funcion  que busca si el campo a Insertar ya existe en la Tabla
+ </summary>
+	<param name="NombreTabla"> nombre de la tabla al que se le va insertar el nuevo campo</param>
+	<param name="NombreColumna"> nombre de la nueva columna a insertar</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Modulo_CashFlowV2.cls_Actualizacion.fn_Columnas_Consultar(System.String)">
+	<summary>
+ Consulta que nos trae todas las columnas de la Tabla indicada
+ </summary>
+	<param name="NombreTabla"> Nombre de la Tabla del cual obtendremos sus columnas</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Modulo_CashFlowV2.cls_Actualizacion.fn_Buscar_TablaenBDD(System.String)">
+	<summary>
+ Funcion que busca si la tabla que deseamos crear existe en la BDD
+ </summary>
+	<param name="NombreTabla"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Modulo_CashFlowV2.cls_Actualizacion.fn_AlterarEsctructura_SQLCE">
+	<summary>
+ Funcion para crear y/o modificar campos, crear Tablas nuevas
+ </summary>
+	<remarks></remarks>
+</member><member name="T:Modulo_CashFlowV2.stc_58mmWinNormal">
+	<summary>
+ Estructura del Recibo de 58mm Windows Normal
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Modulo_CashFlowV2.cls_Ticket58mmWinNormal.Imprimir(Modulo_CashFlowV2.stc_58mmWinNormal)">
+	<summary>
+ Función que Manda a Imprimir un Archivo
+ </summary>
+	<param name="Recibo"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Modulo_CashFlowV2.cls_Ticket58mmWinNormal.ValidarImpresora">
+	<summary>
+ Revisar si la Impresora es la Apropiada
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:Modulo_CashFlowV2.cls_Ticket58mmWinNormal">
+	<summary>
+ Generación de la Impresión 58mm (Windows Normal)
+ </summary>
+	<remarks></remarks>
+</member><member name="P:Modulo_CashFlowV2.My.Resources.Resources.ResourceManager">
+	<summary>
+  Devuelve la instancia de ResourceManager almacenada en caché utilizada por esta clase.
+</summary>
+</member><member name="P:Modulo_CashFlowV2.My.Resources.Resources.Culture">
+	<summary>
+  Reemplaza la propiedad CurrentUICulture del subproceso actual para todas las
+  búsquedas de recursos mediante esta clase de recurso fuertemente tipado.
+</summary>
+</member><member name="P:Modulo_CashFlowV2.My.Resources.Resources.Aceptar">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Modulo_CashFlowV2.My.Resources.Resources.Agregar">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Modulo_CashFlowV2.My.Resources.Resources.Alert_CashFlow">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Modulo_CashFlowV2.My.Resources.Resources.auditoria_software">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Modulo_CashFlowV2.My.Resources.Resources.Backspace">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Modulo_CashFlowV2.My.Resources.Resources.Baja">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Modulo_CashFlowV2.My.Resources.Resources.BajaReing">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Modulo_CashFlowV2.My.Resources.Resources.BorrarDepositos">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Modulo_CashFlowV2.My.Resources.Resources.btn_AgregarCaset">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Modulo_CashFlowV2.My.Resources.Resources.btn_AgregarTodo">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Modulo_CashFlowV2.My.Resources.Resources.btn_AgregarUno">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Modulo_CashFlowV2.My.Resources.Resources.btn_Auditoria">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Modulo_CashFlowV2.My.Resources.Resources.btn_CambiarPassword">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Modulo_CashFlowV2.My.Resources.Resources.btn_CatalogoCaset">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Modulo_CashFlowV2.My.Resources.Resources.btn_CerrarAplicacion">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Modulo_CashFlowV2.My.Resources.Resources.btn_CerrarSesion">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Modulo_CashFlowV2.My.Resources.Resources.btn_ConsultaDepositos">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Modulo_CashFlowV2.My.Resources.Resources.btn_ConsultaRetiros">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Modulo_CashFlowV2.My.Resources.Resources.btn_ConsultaSaldos">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Modulo_CashFlowV2.My.Resources.Resources.btn_ConsultaUsuarios">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Modulo_CashFlowV2.My.Resources.Resources.btn_CorteDiario">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Modulo_CashFlowV2.My.Resources.Resources.btn_Depositos">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Modulo_CashFlowV2.My.Resources.Resources.btn_Descargar">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Modulo_CashFlowV2.My.Resources.Resources.btn_DesktopSize">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Modulo_CashFlowV2.My.Resources.Resources.btn_Dollar">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Modulo_CashFlowV2.My.Resources.Resources.btn_EditarUsuario">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Modulo_CashFlowV2.My.Resources.Resources.btn_EliminarCaset">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Modulo_CashFlowV2.My.Resources.Resources.btn_EliminarUsuario">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Modulo_CashFlowV2.My.Resources.Resources.btn_Movimientos">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Modulo_CashFlowV2.My.Resources.Resources.btn_Parametros">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Modulo_CashFlowV2.My.Resources.Resources.btn_Pausa">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Modulo_CashFlowV2.My.Resources.Resources.btn_Privilegios">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Modulo_CashFlowV2.My.Resources.Resources.btn_QuitarTodo">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Modulo_CashFlowV2.My.Resources.Resources.btn_QuitarUno">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Modulo_CashFlowV2.My.Resources.Resources.btn_ReiniciarImpresora">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Modulo_CashFlowV2.My.Resources.Resources.btn_Retiros">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Modulo_CashFlowV2.My.Resources.Resources.btn_Sincronizar">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Modulo_CashFlowV2.My.Resources.Resources.btn_SubirArchivo">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Modulo_CashFlowV2.My.Resources.Resources.btn_ValidarBilletes">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Modulo_CashFlowV2.My.Resources.Resources.Buzon">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Modulo_CashFlowV2.My.Resources.Resources.C_Depositos">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Modulo_CashFlowV2.My.Resources.Resources.C_DepositosD">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Modulo_CashFlowV2.My.Resources.Resources.C_Movimientos">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Modulo_CashFlowV2.My.Resources.Resources.C_Retiros">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Modulo_CashFlowV2.My.Resources.Resources.C_RetirosD">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Modulo_CashFlowV2.My.Resources.Resources.calendar_16">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Modulo_CashFlowV2.My.Resources.Resources.Cancelar">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Modulo_CashFlowV2.My.Resources.Resources.cargando">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Modulo_CashFlowV2.My.Resources.Resources.CASET1">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Modulo_CashFlowV2.My.Resources.Resources.CASET2">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Modulo_CashFlowV2.My.Resources.Resources.CheckBox_Checked_24x24">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Modulo_CashFlowV2.My.Resources.Resources.CheckBox_Tristate_24x24">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Modulo_CashFlowV2.My.Resources.Resources.CheckBox_Unchecked_24x24">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Modulo_CashFlowV2.My.Resources.Resources.Conectar">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Modulo_CashFlowV2.My.Resources.Resources.copy">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Modulo_CashFlowV2.My.Resources.Resources.Detalle">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Modulo_CashFlowV2.My.Resources.Resources.Down_arrow">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Modulo_CashFlowV2.My.Resources.Resources.Enter">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Modulo_CashFlowV2.My.Resources.Resources.error_128">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Modulo_CashFlowV2.My.Resources.Resources.Examinar">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Modulo_CashFlowV2.My.Resources.Resources.Finalizar">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Modulo_CashFlowV2.My.Resources.Resources.Guardar">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Modulo_CashFlowV2.My.Resources.Resources.img_Bajar">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Modulo_CashFlowV2.My.Resources.Resources.img_Subir">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Modulo_CashFlowV2.My.Resources.Resources.Imprimir">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Modulo_CashFlowV2.My.Resources.Resources.information_128">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Modulo_CashFlowV2.My.Resources.Resources.Inicializar">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Modulo_CashFlowV2.My.Resources.Resources.Mostrar">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Modulo_CashFlowV2.My.Resources.Resources.MXP100">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Modulo_CashFlowV2.My.Resources.Resources.MXP1000">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Modulo_CashFlowV2.My.Resources.Resources.MXP20">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Modulo_CashFlowV2.My.Resources.Resources.MXP200">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Modulo_CashFlowV2.My.Resources.Resources.MXP50">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Modulo_CashFlowV2.My.Resources.Resources.MXP500">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Modulo_CashFlowV2.My.Resources.Resources.Negar">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Modulo_CashFlowV2.My.Resources.Resources.NoId">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Modulo_CashFlowV2.My.Resources.Resources.Ok_128">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Modulo_CashFlowV2.My.Resources.Resources.Pesos">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Modulo_CashFlowV2.My.Resources.Resources.question_128">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Modulo_CashFlowV2.My.Resources.Resources.RadioButton_Checked_24x24">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Modulo_CashFlowV2.My.Resources.Resources.RadioButton_UnChecked_24x24">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Modulo_CashFlowV2.My.Resources.Resources.Refrescar">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Modulo_CashFlowV2.My.Resources.Resources.ReiniciarPC">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Modulo_CashFlowV2.My.Resources.Resources.Respaldar">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Modulo_CashFlowV2.My.Resources.Resources.Salir">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Modulo_CashFlowV2.My.Resources.Resources.ScriptSQL">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Modulo_CashFlowV2.My.Resources.Resources.TarjetaRed">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Modulo_CashFlowV2.My.Resources.Resources.Thumbs">
+	<summary>
+  Busca un recurso adaptado de tipo System.Byte[].
+</summary>
+</member><member name="P:Modulo_CashFlowV2.My.Resources.Resources.Up_Arrow">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Modulo_CashFlowV2.My.Resources.Resources.USD1">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Modulo_CashFlowV2.My.Resources.Resources.USD10">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Modulo_CashFlowV2.My.Resources.Resources.USD100">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Modulo_CashFlowV2.My.Resources.Resources.USD2">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Modulo_CashFlowV2.My.Resources.Resources.USD20">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Modulo_CashFlowV2.My.Resources.Resources.USD5">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Modulo_CashFlowV2.My.Resources.Resources.USD50">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Modulo_CashFlowV2.My.Resources.Resources.warning_128">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Modulo_CashFlowV2.My.Resources.Resources.xml">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="T:Modulo_CashFlowV2.My.Resources.Resources">
+	<summary>
+  Clase de recurso fuertemente tipado, para buscar cadenas traducidas, etc.
+</summary>
+</member><member name="T:Modulo_CashFlowV2.stc_80mmWinNormal">
+	<summary>
+ Estructura del Recibo de 80mm Windows Normal
+ </summary>
+	<remarks></remarks>
+</member><member name="T:Modulo_CashFlowV2.cls_Ticket80mmWinNormal">
+	<summary>
+ Generación de la Impresión de 80mm Windows Normal
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Modulo_CashFlowV2.cls_Usuarios.fn_Usuario_Validar">
+	<summary>
+ Validación de Usuario
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Modulo_CashFlowV2.cls_Usuarios.fn_Propiedades_Limpiar">
+	<summary>
+ Limpiar valores de las Propiedades
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Modulo_CashFlowV2.cls_Usuarios.fn_Clave_Existe">
+	<summary>
+ Revisar Existencia de la Clave de Usuario
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Modulo_CashFlowV2.cls_Usuarios.fn_Clave_Validar">
+	<summary>
+ Validación de la estructura de la Clave
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Modulo_CashFlowV2.cls_Usuarios.fn_Contrasena_Existe(System.String,System.String)">
+	<summary>
+ Revisar Existencia de la Contrasena de Usuario
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Modulo_CashFlowV2.cls_Usuarios.fn_Contrasena_Validar">
+	<summary>
+ Validación de la estructura de la Contraseña
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Modulo_CashFlowV2.cls_Usuarios.ValidarRepeticion(System.String)">
+	<summary>
+ Validar la Repetición de los Dígitos Capturados
+ </summary>
+	<param name="Valor">El Datos que se Validará en Repetición de su contenido</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Modulo_CashFlowV2.cls_Usuarios.fn_Datos_Validar">
+	<summary>
+ Validaciones Sencillas de los Datos
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

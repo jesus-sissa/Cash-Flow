@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="CashflowService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsp:Policy wsu:Id="BasicHttpsBinding_ICashflowService_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <sp:TransportBinding xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <wsp:Policy>
+            <sp:TransportToken>
+              <wsp:Policy>
+                <sp:HttpsToken RequireClientCertificate="false" />
+              </wsp:Policy>
+            </sp:TransportToken>
+            <sp:AlgorithmSuite>
+              <wsp:Policy>
+                <sp:Basic256 />
+              </wsp:Policy>
+            </sp:AlgorithmSuite>
+            <sp:Layout>
+              <wsp:Policy>
+                <sp:Strict />
+              </wsp:Policy>
+            </sp:Layout>
+          </wsp:Policy>
+        </sp:TransportBinding>
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://sissa-ws-test.azurewebsites.net/CashflowService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://sissa-ws-test.azurewebsites.net/CashflowService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://sissa-ws-test.azurewebsites.net/CashflowService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Cashflow.Web.Service" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ICashflowService_TestConnection_InputMessage">
+    <wsdl:part name="parameters" element="tns:TestConnection" />
+  </wsdl:message>
+  <wsdl:message name="ICashflowService_TestConnection_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TestConnectionResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICashflowService_InsertTransaccionDeposito_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertTransaccionDeposito" />
+  </wsdl:message>
+  <wsdl:message name="ICashflowService_InsertTransaccionDeposito_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertTransaccionDepositoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICashflowService_InsertTransaccionRetiro_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertTransaccionRetiro" />
+  </wsdl:message>
+  <wsdl:message name="ICashflowService_InsertTransaccionRetiro_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertTransaccionRetiroResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICashflowService_UpdateDepositoReferenciaStatus_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateDepositoReferenciaStatus" />
+  </wsdl:message>
+  <wsdl:message name="ICashflowService_UpdateDepositoReferenciaStatus_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateDepositoReferenciaStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICashflowService_AddTransactionLog_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddTransactionLog" />
+  </wsdl:message>
+  <wsdl:message name="ICashflowService_AddTransactionLog_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddTransactionLogResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICashflowService_GetFileTransferAcreditaciones_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetFileTransferAcreditaciones" />
+  </wsdl:message>
+  <wsdl:message name="ICashflowService_GetFileTransferAcreditaciones_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetFileTransferAcreditacionesResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICashflowService_SendFileTransferResponse_InputMessage">
+    <wsdl:part name="parameters" element="tns:SendFileTransferResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICashflowService_SendFileTransferResponse_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SendFileTransferResponseResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICashflowService_SendFileTransferRecolecciones_InputMessage">
+    <wsdl:part name="parameters" element="tns:SendFileTransferRecolecciones" />
+  </wsdl:message>
+  <wsdl:message name="ICashflowService_SendFileTransferRecolecciones_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SendFileTransferRecoleccionesResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ICashflowService">
+    <wsdl:operation name="TestConnection">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICashflowService/TestConnection" message="tns:ICashflowService_TestConnection_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICashflowService/TestConnectionResponse" message="tns:ICashflowService_TestConnection_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertTransaccionDeposito">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICashflowService/InsertTransaccionDeposito" message="tns:ICashflowService_InsertTransaccionDeposito_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICashflowService/InsertTransaccionDepositoResponse" message="tns:ICashflowService_InsertTransaccionDeposito_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertTransaccionRetiro">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICashflowService/InsertTransaccionRetiro" message="tns:ICashflowService_InsertTransaccionRetiro_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICashflowService/InsertTransaccionRetiroResponse" message="tns:ICashflowService_InsertTransaccionRetiro_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateDepositoReferenciaStatus">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICashflowService/UpdateDepositoReferenciaStatus" message="tns:ICashflowService_UpdateDepositoReferenciaStatus_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICashflowService/UpdateDepositoReferenciaStatusResponse" message="tns:ICashflowService_UpdateDepositoReferenciaStatus_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddTransactionLog">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICashflowService/AddTransactionLog" message="tns:ICashflowService_AddTransactionLog_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICashflowService/AddTransactionLogResponse" message="tns:ICashflowService_AddTransactionLog_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFileTransferAcreditaciones">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICashflowService/GetFileTransferAcreditaciones" message="tns:ICashflowService_GetFileTransferAcreditaciones_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICashflowService/GetFileTransferAcreditacionesResponse" message="tns:ICashflowService_GetFileTransferAcreditaciones_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SendFileTransferResponse">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICashflowService/SendFileTransferResponse" message="tns:ICashflowService_SendFileTransferResponse_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICashflowService/SendFileTransferResponseResponse" message="tns:ICashflowService_SendFileTransferResponse_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SendFileTransferRecolecciones">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICashflowService/SendFileTransferRecolecciones" message="tns:ICashflowService_SendFileTransferRecolecciones_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICashflowService/SendFileTransferRecoleccionesResponse" message="tns:ICashflowService_SendFileTransferRecolecciones_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_ICashflowService" type="tns:ICashflowService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="TestConnection">
+      <soap:operation soapAction="http://tempuri.org/ICashflowService/TestConnection" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertTransaccionDeposito">
+      <soap:operation soapAction="http://tempuri.org/ICashflowService/InsertTransaccionDeposito" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertTransaccionRetiro">
+      <soap:operation soapAction="http://tempuri.org/ICashflowService/InsertTransaccionRetiro" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateDepositoReferenciaStatus">
+      <soap:operation soapAction="http://tempuri.org/ICashflowService/UpdateDepositoReferenciaStatus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddTransactionLog">
+      <soap:operation soapAction="http://tempuri.org/ICashflowService/AddTransactionLog" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFileTransferAcreditaciones">
+      <soap:operation soapAction="http://tempuri.org/ICashflowService/GetFileTransferAcreditaciones" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendFileTransferResponse">
+      <soap:operation soapAction="http://tempuri.org/ICashflowService/SendFileTransferResponse" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendFileTransferRecolecciones">
+      <soap:operation soapAction="http://tempuri.org/ICashflowService/SendFileTransferRecolecciones" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="BasicHttpsBinding_ICashflowService" type="tns:ICashflowService">
+    <wsp:PolicyReference URI="#BasicHttpsBinding_ICashflowService_policy" />
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="TestConnection">
+      <soap:operation soapAction="http://tempuri.org/ICashflowService/TestConnection" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertTransaccionDeposito">
+      <soap:operation soapAction="http://tempuri.org/ICashflowService/InsertTransaccionDeposito" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertTransaccionRetiro">
+      <soap:operation soapAction="http://tempuri.org/ICashflowService/InsertTransaccionRetiro" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateDepositoReferenciaStatus">
+      <soap:operation soapAction="http://tempuri.org/ICashflowService/UpdateDepositoReferenciaStatus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddTransactionLog">
+      <soap:operation soapAction="http://tempuri.org/ICashflowService/AddTransactionLog" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFileTransferAcreditaciones">
+      <soap:operation soapAction="http://tempuri.org/ICashflowService/GetFileTransferAcreditaciones" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendFileTransferResponse">
+      <soap:operation soapAction="http://tempuri.org/ICashflowService/SendFileTransferResponse" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendFileTransferRecolecciones">
+      <soap:operation soapAction="http://tempuri.org/ICashflowService/SendFileTransferRecolecciones" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="CashflowService">
+    <wsdl:port name="BasicHttpBinding_ICashflowService" binding="tns:BasicHttpBinding_ICashflowService">
+      <soap:address location="http://sissa-ws-test.azurewebsites.net/CashflowService.svc" />
+    </wsdl:port>
+    <wsdl:port name="BasicHttpsBinding_ICashflowService" binding="tns:BasicHttpsBinding_ICashflowService">
+      <soap:address location="https://sissa-ws-test.azurewebsites.net/CashflowService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
